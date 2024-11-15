@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Participant List</title>
+<script type="text/javascript" src="js/jquery.js"></script> 
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<style type="text/css">
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+table {
+	width: 98%;
+	margin: 10px auto;
+	border: 1px solid #333;
+	border-collapse: collapse;
+}
+th, td {
+	border: 1px solid #777;
+}
+tbody tr:nth-child(even) {
+	background-color: #d6e6f4;
+}
+td {
+	vertical-align: top;
+	padding: 3px 5px;
+}
+caption {
+	color: #1f4e79;
+	font-size: 1.5em;
+	margin: 10px;
+	font-weight: 700;
+}
+table.tablesorter th {
+	background-color: #17365d;
+	color: #fff;
+	padding: 10px;
+	cursor: pointer;
+}
+table.tablesorter thead tr .header {
+	background-image: url(img/bg.png);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(img/desc.png);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(img/asc.png);
+}
+table.tablesorter thead tr .headerSortDown, 
+table.tablesorter thead tr .headerSortUp {
+	background-color: #17365d;	/* default color is: #8dbdd8 */
+}
+</style> 
+</head>
+
+<body>
+<table id="participants" class="tablesorter">
+<caption>Participant List</caption>
+<thead>
+  <tr>
+    <th width="10%" scope="col">Last Name</th>
+    <th width="10%" scope="col">First Name</th>
+    <th width="20%" scope="col">Title</th>
+    <th width="20%" scope="col">Company</th>
+    <th width="20%" scope="col">Email Address</th>
+    <th scope="col">Work Phone</th>
+  </tr>
+</thead>
+
+<tbody>
+  <tr><td>Alexander</td><td>Alex</td><td>Program Director</td><td>Mayo Clinic</td><td>alexander.alex@mayo.edu</td><td>507-284-6834</td></tr>
+ <tr><td>Barker</td><td>Elizabeth</td><td>Research Assistant Professor</td><td>University of Tennessee</td><td>ebarker1@vols.utk.edu</td><td>865-974-8068</td></tr>
+ <tr><td>Barry</td><td>Romiya</td><td>Clinical Operations Manager</td><td>Angiodynamics, Inc.</td><td>rbarry@angiodynamics.com</td><td>&nbsp;</td></tr>
+ <tr><td>Beckstrom</td><td>Julie</td><td>Research Associate</td><td>University of Utah</td><td>Julie.Beckstrom@hsc.utah.edu</td><td>801-587-1450</td></tr>
+ <tr><td>Bennett</td><td>Rory</td><td>Proposal Specialist</td><td>Georgetown University</td><td>rb1545@georgetown.edu</td><td>202-687-3285</td></tr>
+ <tr><td>Bentley LaMar</td><td>Mary</td><td>Executive Director</td><td>The Sickle Cell Association of New Jersey</td><td>sicklecellanj@gmail.com</td><td>908-247-9130</td></tr>
+ <tr><td>Bentley-Lewis</td><td>Rhonda</td><td>Physician</td><td>Massachusetts General Hospital</td><td>rbentleylewis@mgh.harvard.edu</td><td>617-726-2874</td></tr>
+ <tr><td>Bertram</td><td>Jessica</td><td>Administrator</td><td>University of Washington</td><td>soderljm@uw.edu</td><td>206-221-5943</td></tr>
+ <tr><td>Blader</td><td>Joseph</td><td>Meadows Fdn / Semp Russ Prof of Child Psychiatry</td><td>University of Texas Health Sci Ctr at San Antonio</td><td>blader@uthscsa.edu</td><td>210-567-5312</td></tr>
+ <tr><td>Blank</td><td>Ken</td><td>Senior Vice President for Health Sciences</td><td>Rowan University</td><td>blank@rowan.edu</td><td>856-256-5854</td></tr>
+ <tr><td>Bloomrosen</td><td>Meryl</td><td>Sr VP</td><td>Asthma and Allergy Foundation of America</td><td>mbloomrosen@aafa.org</td><td>202-466-7643</td></tr>
+ <tr><td>Boray</td><td>Srinidhi</td><td>CEO</td><td>Ingine Inc</td><td>sboray@ingine.com</td><td>703-286-5782</td></tr>
+ <tr><td>Bousquet</td><td>Christina</td><td>Grants & Contracts Specialist</td><td>University of Virginia</td><td>cbb9r@virginia.edu</td><td>434-982-6829</td></tr>
+ <tr><td>Brakenridge</td><td>Scott</td><td>Assistant Professor</td><td>University of Florida</td><td>Scott.Brakenridge@surgery.ufl.edu</td><td>352-273-5670</td></tr>
+ <tr><td>Brennan</td><td>Mary</td><td>Director, Acute Care Nurse Practitioner Program</td><td>New York University</td><td>mb78@nyu.edu</td><td>917-716-1562</td></tr>
+ <tr><td>Brodlie</td><td>Debra</td><td>Director, Sponsored Projects</td><td>Johns Hopkins School of Nursing</td><td>dbrodlie@jhu.edu</td><td>410-502-9268</td></tr>
+ <tr><td>Brotman</td><td>David</td><td>Research Associate</td><td>University of Connecticut Health Center</td><td>david.brotman@duke.edu</td><td>443-286-5723</td></tr>
+ <tr><td>Brown</td><td>Anthony</td><td>Men's health coordinator</td><td>Healthy African American Families II</td><td>anthonybrown@haafii.org</td><td>323-292-2002</td></tr>
+ <tr><td>Browne</td><td>Doris</td><td>President and CEO</td><td>Browne and Associates, Inc. (BAI).</td><td>doris@browneassoc.com</td><td>202-362-6964</td></tr>
+ <tr><td>Buchheit</td><td>Thomas</td><td>Division Chief, Pain Medicine</td><td>Duke University</td><td>Thomas.Buchheit@duke.edu</td><td>919-681-9940</td></tr>
+ <tr><td>Burleson</td><td>Deeanna</td><td>RN, MSN, PhD(c), CEO, IMC</td><td>Full Spectrum Solutions</td><td>fullspectrumsolns@gmail.com</td><td>703-303-6143</td></tr>
+ <tr><td>Byrd</td><td>Demarkus</td><td>Business Development Associate</td><td>Duke University</td><td>demarkus.byrd@dm.duke.edu</td><td>919-257-3526</td></tr>
+ <tr><td>Callier</td><td>Theodore</td><td>Asst. Vice President</td><td>Dillard University</td><td>tcallier@dillard.edu</td><td>504-816-4018</td></tr>
+ <tr><td>Campbell</td><td>Grace</td><td>Assistant Professor</td><td>University of Pittsburgh</td><td>gbc3@pitt.edu</td><td>412-383-8754</td></tr>
+ <tr><td>Campbell</td><td>Amy</td><td>Board member</td><td>HEAR Network</td><td>amymlcampbell@gmail.com</td><td>310-279-2804</td></tr>
+ <tr><td>Carlton</td><td>Lucas</td><td>Research Administrator</td><td>University of California, Berkeley</td><td>lucascarlton@berkeley.edu</td><td>510-643-0238</td></tr>
+ <tr><td>Carpenter</td><td>Erica</td><td>Grant Proposal Generalist</td><td>Pennsylvania State University Hershey Medical Center</td><td>ecarpenter@hmc.psu.edu</td><td>717-531-0003 x283075</td></tr>
+ <tr><td>Carson-Smith</td><td>Winifred</td><td>President</td><td>CarsonCompany LLC</td><td>wycarsonsmith@gmail.com</td><td>&nbsp;</td></tr>
+ <tr><td>Cenatiempo</td><td>Marca</td><td>Director, Health Sciences Research & Grants</td><td>Lincoln Memorial University-DeBusk College of Osteopathic Medicine</td><td>marca.cenatiempo@lmunet.edu</td><td>423-869-6838</td></tr>
+ <tr><td>Chan</td><td>Elaine</td><td>Program Manager/ Senior Analyst</td><td>Hemophilia Federation of America</td><td>e.chan@hemophiliafed.org</td><td>202-675-6984</td></tr>
+ <tr><td>Chavez</td><td>Virginia</td><td>Grants and Contract Administrator</td><td>University of New Mexico Health Sciences Center</td><td>vchavez22@salud.unm.edu</td><td>505-272-3403</td></tr>
+ <tr><td>Cheng</td><td>Angie</td><td>Research Finance Manager</td><td>Partners Health Care</td><td>ascheng@partners.org</td><td>857-282-1767</td></tr>
+ <tr><td>Cohen</td><td>Marc</td><td>Clinical Professor</td><td>UMass Boston, McCormack Graduate School of Policy and Global Studies</td><td>marc.cohen@umb.edu</td><td>617-287-7306</td></tr>
+ <tr><td>Conti</td><td>Joanna</td><td>CEO</td><td>Vista Research Group, Inc.</td><td>jconti@vista-research-group.com</td><td>410-757-2811</td></tr>
+ <tr><td>Cooper</td><td>Leslie</td><td>Independent Consultant</td><td>&nbsp;</td><td>drlesliecooper@gmail.com</td><td>202-441-1002</td></tr>
+ <tr><td>Costenbader</td><td>Betsy</td><td>Social Scientist</td><td>FHI 360</td><td>bcostenbader@fhi360.org</td><td>919-544-7040</td></tr>
+ <tr><td>Crupiti</td><td>Amy</td><td>Contracts & Grants Administrator</td><td>MedStar Health Research Institute, Inc.</td><td>amy.p.crupiti@medstar.net</td><td>301-560-7379</td></tr>
+ <tr><td>Damush</td><td>Teresa</td><td>Associate Research Professor of Medicine</td><td>Indiana University School of Medicine/VA</td><td>tdamush@iupui.edu</td><td>317-201-3661</td></tr>
+ <tr><td>Dasey</td><td>Timothy</td><td>Group Leader</td><td>MIT Lincoln Laboratory</td><td>TimD@LL.mit.edu</td><td>781-981-7451</td></tr>
+ <tr><td>Davis</td><td>Sonja</td><td>Proposal Specialist</td><td>The Henry M. Jackson Foundationfor the Adv'mt of Military Medicine, Inc.</td><td>smdavis@hjf.org</td><td>240-694-2287</td></tr>
+ <tr><td>Della Porta</td><td>Gina</td><td>Director of Research Development, Duke Surgery</td><td>Duke University School of Medicine</td><td>gina.dp@duke.edu</td><td>919-660-0911</td></tr>
+ <tr><td>Di Stefano</td><td>Anthony</td><td>Professor, MPH Program Director</td><td>Salus University</td><td>tdistefano@salus.edu</td><td>215-780-1279</td></tr>
+ <tr><td>Diehl</td><td>Thekla</td><td>Senior Research Finance Specialist</td><td>Partners Health Care</td><td>tdiehl@partners.org</td><td>857-282-1741</td></tr>
+ <tr><td>Doherty</td><td>Taylor</td><td>Financial Coordinator</td><td>Brigham and Women's Hospital</td><td>tdoherty5@partners.org</td><td>&nbsp;</td></tr>
+ <tr><td>Donovan</td><td>Heidi</td><td>Professor & Vice Chair for Research</td><td>University of Pittsburgh School of Nursing</td><td>donovanh@pitt.edu</td><td>412-624-2699</td></tr>
+ <tr><td>Drell</td><td>Debbie</td><td>Senior Director, Volunteer Services</td><td>Pulmonary Hypertension Association</td><td>DebbieD@phassociation.org</td><td>202-271-9301</td></tr>
+ <tr><td>Driss</td><td>Meriam</td><td>Senior Director, Strategic Partnerships</td><td>LUNGevity Foundation</td><td>mdriss@lungevity.org</td><td>571-379-0179</td></tr>
+ <tr><td>Duncan</td><td>Barbara</td><td>Senior Proposal Development Officer</td><td>University of Kentucky</td><td>barb.duncan@uky.edu</td><td>859-257-5280</td></tr>
+ <tr><td>Eichenbrenner</td><td>Paula</td><td>Executive Director</td><td>AMCP Foundation</td><td>paula@amcpfoundation.org</td><td>703-684-2605</td></tr>
+ <tr><td>Eisen</td><td>Seth</td><td>Professor of Medicine</td><td>Washington University, St Louis</td><td>seisen@wustl.edu</td><td>202-617-0675</td></tr>
+ <tr><td>Elkins</td><td>Jeananne</td><td>Assistant Professor</td><td>Emory University</td><td>jept10@gmail.com</td><td>404-621-5119</td></tr>
+ <tr><td>Ellstrom</td><td>Kathleen</td><td>Pulmonary Clinical Nurse Specialist</td><td>VA Loma Linda Healthcare System</td><td>kathleen.ellstrom@va.gov</td><td>909-583-6095</td></tr>
+ <tr><td>Erickson</td><td>Roger</td><td>Managing Partner</td><td>SABR Biomanufacturing, LLC</td><td>rge@SabrBio.com</td><td>301-370-1097</td></tr>
+ <tr><td>Esposito</td><td>Kaitlyn</td><td>RESEARCH & PROGRAMS</td><td>CHIARI & SYRINGOMYELIA FOUNDATION</td><td>KESPOSITO@CSFINFO.ORG</td><td>718-966-2593</td></tr>
+ <tr><td>Estell</td><td>Tonya</td><td>Project Coordinator</td><td>Arkansas Transgender Equality Coalition/Transform Health Arkansas</td><td>tonya.estell@gmail.com</td><td>501-499-0092</td></tr>
+ <tr><td>Evans-Riester</td><td>Lynn</td><td>Senior Director</td><td>Inova Health System</td><td>Lynn.Evans-Riester@inova.org</td><td>703-776-6818</td></tr>
+ <tr><td>Farlow</td><td>Erin</td><td>Attending Surgeon</td><td>Cook County Health and Hospital Systems</td><td>efarlow@cookcountyhhs.org</td><td>312-864-3202</td></tr>
+ <tr><td>Feldblum</td><td>Paul</td><td>Senior Epidemiologist</td><td>FHI 360</td><td>pfeldblum@fhi360.org</td><td>919-544-7040 x11237</td></tr>
+ <tr><td>Fischer</td><td>Beth</td><td>Project Manager</td><td>Nationwide Childrens</td><td>beth.fischer@nationwidechildrens.org</td><td>&nbsp;</td></tr>
+ <tr><td>Garrick</td><td>Owen</td><td>President</td><td>Bridge Clinical Research</td><td>owen.garrick@bridgeclinical.com</td><td>510-225-2501</td></tr>
+ <tr><td>Gbegnon</td><td>Celestin</td><td>Sr. Accountant</td><td>HealthCore, Inc.</td><td>cgbegnon@healthcore.com</td><td>703-236-6351</td></tr>
+ <tr><td>Geist</td><td>Kathleen</td><td>Assistant Professor</td><td>Emory University</td><td>kgeist@emory.edu</td><td>&nbsp;</td></tr>
+ <tr><td>Georgian-Smith</td><td>Dianne</td><td>Staff Radiologist</td><td>Brigham and Women's Hospital</td><td>dgeorgiansmith@partners.org</td><td>617-732-6269</td></tr>
+ <tr><td>Gibbons</td><td>Brent</td><td>Research Leader</td><td>IBM Watson Health</td><td>bgibbons@us.ibm.com</td><td>301-547-4420</td></tr>
+ <tr><td>Gomez</td><td>Maria Isabel</td><td>Project Coordinator Pediatric Retina Center</td><td>The University of Utah The Moran Eye Center</td><td>maria.gomez@hsc.utah.edu</td><td>801-587-7173</td></tr>
+ <tr><td>Granda</td><td>Darci</td><td>Managing Director</td><td>McAllister & Quinn</td><td>dgranda@jm-aq.com</td><td>202-296-2751</td></tr>
+ <tr><td>Greenlaw</td><td>June</td><td>Research Associate/Consortium Manager</td><td>University of South Carolina</td><td>june.headley@sc.edu</td><td>803-777-5452</td></tr>
+ <tr><td>Grigsby</td><td>Sheila</td><td>Primary Investigator</td><td>University of Missouri--St. Louis</td><td>grigsbys@umsl.edu</td><td>314-516-6691</td></tr>
+ <tr><td>Halbern</td><td>Sarah</td><td>Director of Research</td><td>University of Utah</td><td>sarah.halbern@hsc.utah.edu</td><td>801-581-8409</td></tr>
+ <tr><td>Hallas</td><td>Donna</td><td>Clinical Professor & Director PNP Program</td><td>New York University Meyers College of Nursing</td><td>dh88@nyu.edu</td><td>212-998-5295</td></tr>
+ <tr><td>Harper O'Connor</td><td>Nichele</td><td>Director of Title III</td><td>Dillard University</td><td>nharper@dillard.edu</td><td>504-816-4212</td></tr>
+ <tr><td>Haskins</td><td>Kayla</td><td>Grants Manager</td><td>LUNGevity Foundation</td><td>khaskins@lungevity.org</td><td>&nbsp;</td></tr>
+ <tr><td>Highland</td><td>Krista</td><td>Senior Scientist</td><td>Defense and Veterans Center for Integrative Pain Management</td><td>khighland@dvcipm.org</td><td>240-284-6622</td></tr>
+ <tr><td>Hu</td><td>Valerie</td><td>Professor of Biochemistry and Molecular Medicine</td><td>The George Washington University</td><td>valhu@gwu.edu</td><td>202-994-8431</td></tr>
+ <tr><td>Hubbard</td><td>Alan</td><td>Professor</td><td>UC Berkeley</td><td>hubbard@berkeley.edu</td><td>510-643-6160</td></tr>
+ <tr><td>Iheanacho</td><td>Theddeus</td><td>Assistant Professor</td><td>Yale University School of Medicine</td><td>theddeus.iheanacho@yale.edu</td><td>203-444-6713</td></tr>
+ <tr><td>Iranpour</td><td>Sarah</td><td>President</td><td>Technology Digest inc</td><td>Sarah@technologydigest.net</td><td>240-505-7272</td></tr>
+ <tr><td>James</td><td>Elysia</td><td>Neurointensivist</td><td>Spectrum Health Hospital</td><td>elysia.james@spectrumhealth.org</td><td>616-272-6233</td></tr>
+ <tr><td>Johnson</td><td>Mark</td><td>Professor and Chair</td><td>Howard University</td><td>mark.johnson@howard.edu</td><td>202-806-6300</td></tr>
+ <tr><td>Jones</td><td>Andrea</td><td>Projects Specialist</td><td>Healthy African American Families</td><td>andreaj97@gmail.com</td><td>323-292-2002</td></tr>
+ <tr><td>Juon</td><td>Hee-Soon</td><td>Professor</td><td>Thomas Jefferson University</td><td>Hee-Soon.Juon@jefferson.edu</td><td>215-503-5261</td></tr>
+ <tr><td>Kapetanovic</td><td>Terri</td><td>CEO</td><td>Professional Services Network, Inc</td><td>Terrik@psninc.net</td><td>301-460-4089</td></tr>
+ <tr><td>Karia</td><td>Raj</td><td>Director, Clinical Research, Orthopaedics</td><td>NYU Medical Center</td><td>Raj.Karia@nyumc.org</td><td>212-598-6184</td></tr>
+ <tr><td>Kaufmann</td><td>Alison</td><td>Senior Grants & Contracts Associate</td><td>The George Washington University</td><td>akaufmann@gwu.edu</td><td>202-994-1741</td></tr>
+ <tr><td>Keele</td><td>Becky</td><td>Professor, School of Nursing</td><td>Texas Woman's University</td><td>rkeele@twu.edu</td><td>940-898-2414</td></tr>
+ <tr><td>Khan</td><td>Muhib</td><td>Director, Stroke Center</td><td>Spectrum Health Neuroscience Institute</td><td>muhib.khan@spectrumhealth.org</td><td>616-267-7651</td></tr>
+ <tr><td>Kiick</td><td>Dennis</td><td>University V.P. for Research</td><td>Lincoln Memorial University</td><td>dennis.kiick@lmunet.edu</td><td>423-869-7086</td></tr>
+ <tr><td>Kim</td><td>Oliver</td><td>&nbsp;</td><td>&nbsp;</td><td>oliver@mousetrapdc.com</td><td>571-216-3681</td></tr>
+ <tr><td>King</td><td>Jennifer</td><td>Director, Science & Research</td><td>Lung Cancer Alliance</td><td>jking@lungcanceralliance.org</td><td>202-774-5391</td></tr>
+ <tr><td>Kolli</td><td>Venkata</td><td>Child Psychiatrist</td><td>Creighton University</td><td>venkatakolli@creighton.edu</td><td>402-717-5550</td></tr>
+ <tr><td>Labio</td><td>Merilou</td><td>Financial Project Manager</td><td>Kaiser Permanente- SCAL</td><td>merilou.g.labio@kp.org</td><td>626-564-3849</td></tr>
+ <tr><td>Laird</td><td>Aurelia</td><td>Director of Clinical and Community Research</td><td>Bon Secours Baltimore Health System</td><td>Aurelia_Laird@bshsi.org</td><td>410-362-3254</td></tr>
+ <tr><td>Lee</td><td>Young Ji</td><td>Assistant Professor</td><td>University of Pittsburgh</td><td>leeyoung@pitt.edu</td><td>412-624-7886</td></tr>
+ <tr><td>Lee</td><td>Heeyoung</td><td>&nbsp;</td><td>University of Pittsburgh School of Nursing</td><td>leehee@pitt.edu</td><td>412-624-5073</td></tr>
+ <tr><td>Lee</td><td>Sunmin</td><td>Associate Professor</td><td>University of Maryland School of Public Health</td><td>sunmin@umd.edu</td><td>301-405-7251</td></tr>
+ <tr><td>Llewellyn</td><td>Vanessa</td><td>Program Administrator</td><td>Johns Hopkins University</td><td>vllewellyn@jhmi.edu</td><td>443-996-0923</td></tr>
+ <tr><td>Lloyd</td><td>Clairice</td><td>Senior Grants and Contracts Officer</td><td>202-687-3825</td><td>lloydc@georgetown.edu</td><td>202-687-1207</td></tr>
+ <tr><td>Lucas</td><td>B</td><td>Project Co-Leader</td><td>The Sickle Cell Association of New Jersey</td><td>Beverlyd.lucas@gmail.com</td><td>201-394-6198</td></tr>
+ <tr><td>Luderer</td><td>Hilary</td><td>Director of Clinical Operations</td><td>Pear Therapeutics</td><td>hilary@peartherapeutics.com</td><td>617-863-2318</td></tr>
+ <tr><td>Lynch Machado</td><td>Kate</td><td>Vice President of Business Development</td><td>Atlas Research</td><td>kmachado@atlasresearch.us</td><td>202-717-8710</td></tr>
+ <tr><td>Marshall</td><td>Elizabeth</td><td>Associate Professor</td><td>Rutgers School of Public Health</td><td>marshaeli@sph.rutgers.edu</td><td>732-235-4666</td></tr>
+ <tr><td>Martinez</td><td>Monica</td><td>Research Development</td><td>Health Education Advocates & Research (HEAR)</td><td>monica.livier.martinez@gmail.com</td><td>714-878-0630</td></tr>
+ <tr><td>Mauntel</td><td>Tim</td><td>Research Director</td><td>Walter Reed National Military Medical Center</td><td>timothy.c.mauntel.civ@mail.mil</td><td>&nbsp;</td></tr>
+ <tr><td>McGeeney</td><td>Kristen</td><td>Consulting Manager</td><td>PYA</td><td>kmcgeeney@pyapc.com</td><td>913-232-5145</td></tr>
+ <tr><td>McGlade</td><td>Jane</td><td>Sponsored Research Manager</td><td>FEFA LLC (contract employer at WRAIR)</td><td>jane.f.mcglade.ctr@mail.mil</td><td>301-319-2049</td></tr>
+ <tr><td>Mclean</td><td>Mireille</td><td>Director</td><td>The New York Academy of Sciences</td><td>mmclean@nyas.org</td><td>212-298-8650</td></tr>
+ <tr><td>McManus</td><td>Kathleen</td><td>Fellow Physician</td><td>University of Virginia</td><td>km8jr@hscmail.mcc.virginia.edu</td><td>&nbsp;</td></tr>
+ <tr><td>Miller</td><td>Elaine</td><td>&nbsp;</td><td>University of South Carolina</td><td>cemiller@mailbox.sc.edu</td><td>803-777-2082</td></tr>
+ <tr><td>Mirza</td><td>Sohail</td><td>Professor</td><td>Dartmouth-Hitchcock Medical Center</td><td>sohail.k.mirza@hitchcock.org</td><td>603-727-6647</td></tr>
+ <tr><td>Mitchell</td><td>Jamie</td><td>Assistant Professor</td><td>The University of Michigan</td><td>mitchj@umich.edu</td><td>734-763-4955</td></tr>
+ <tr><td>Mize</td><td>Joanne</td><td>Director of Operations</td><td>UNTHSC</td><td>joanne.mize@unthsc.edu</td><td>&nbsp;</td></tr>
+ <tr><td>Moerchen</td><td>Victoria</td><td>Associate Professor</td><td>University of Wisconsin-Milwaukee</td><td>moerchev@uwm.edu</td><td>414-229-2449</td></tr>
+ <tr><td>Moftah</td><td>Dena</td><td>Operations Manager</td><td>Clinical Directors Network, Inc. (CDN)</td><td>operations@cdnetwork.org</td><td>212-382-0699 ext 221</td></tr>
+ <tr><td>Mohanty</td><td>Nivedita</td><td>Chief Research Officer</td><td>Alliance of Chicago</td><td>nmohanty@alliancechicago.org</td><td>&nbsp;</td></tr>
+ <tr><td>Moore</td><td>Miranda</td><td>Assistant Professor</td><td>Emory</td><td>miranda_a_moore@yahoo.com</td><td>404-727-1376</td></tr>
+ <tr><td>Mureebe</td><td>Leila</td><td>Associate Professor of Surgery</td><td>Duke</td><td>leila.mureebe@duke.edu</td><td>919-681-2800</td></tr>
+ <tr><td>Murthy</td><td>Sreekant</td><td>Chief Research Compliance Officer</td><td>Rowan University</td><td>murthy@rowan.edu</td><td>856-256-5853</td></tr>
+ <tr><td>Nagode</td><td>Dan</td><td>Grants Manager</td><td>Inova Health System</td><td>Daniel.Nagode@inova.org</td><td>703-776-6807</td></tr>
+ <tr><td>Nasim</td><td>Fahim</td><td>Business Analyst</td><td>Inova</td><td>fnasim21@yahoo.com</td><td>&nbsp;</td></tr>
+ <tr><td>Nees</td><td>Rachael</td><td>System Director, Grants</td><td>Catholic Health System</td><td>RNees@chsbuffalo.org</td><td>716-828-3812</td></tr>
+ <tr><td>Neha Sheng</td><td>Neha Sheng</td><td>Attending Surgeon</td><td>Cook County Health and Hospital Systems</td><td>nsheng@cookcountyhhs.org</td><td>312-864-3202</td></tr>
+ <tr><td>Nguyen</td><td>Nam</td><td>President</td><td>International Geriatric Radiotherapy Group</td><td>NamPhong.Nguyen@yahoo.com</td><td>202-865-1421</td></tr>
+ <tr><td>North</td><td>Christie</td><td>Executive Lead</td><td>Taking Care of Our Parents</td><td>cqualinc@aol.com</td><td>801-913-8287</td></tr>
+ <tr><td>Nudo</td><td>Michael</td><td>Manager of Grants and Resource Development</td><td>Alliance of Chicago Community Health Services</td><td>michaelnudo@gmail.com</td><td>312-274-0068</td></tr>
+ <tr><td>O'Hara</td><td>Nathan</td><td>Clinical Research Manager</td><td>University of Maryland School of Medicine</td><td>nohara@umoa.umm.edu</td><td>410-328-9579</td></tr>
+ <tr><td>Osuchukwu</td><td>Ifeanyi</td><td>&nbsp;</td><td>McAllister & Quinn</td><td>iosuchukwu@jm-aq.com</td><td>202-296-2741</td></tr>
+ <tr><td>Page</td><td>Stephen</td><td>&nbsp;</td><td>OHIO STATE UNIVERSITTY COLLEGE OF MEDICINE</td><td>STEPHEN.PAGE@OSUMC.EDU</td><td>614-292-5490</td></tr>
+ <tr><td>Paris</td><td>Julie</td><td>Department Administrator</td><td>University of Vermont</td><td>julie.paris@uvm.edu</td><td>802-656-3451</td></tr>
+ <tr><td>Parlett</td><td>Lauren</td><td>Researcher</td><td>HealthCore</td><td>lparlett@healthcore.com</td><td>703-236-6321</td></tr>
+ <tr><td>Pasha</td><td>Samira</td><td>MEDICAL PLANNER</td><td>CRTKL</td><td>SAMIRA.PASHA@CRTKL.COM</td><td>202-912-8254</td></tr>
+ <tr><td>Pasikowski</td><td>Beth</td><td>Sponsored Programs Administrator</td><td>Spectrum Health</td><td>beth.pasikowski@spectrumhealth.org</td><td>616-456-2023</td></tr>
+ <tr><td>Perez</td><td>Jan</td><td>Managing Partner</td><td>CME Outfitters, LLC</td><td>jperez@cmeoutfitters.com</td><td>614-328-4477</td></tr>
+ <tr><td>Perez Chacon</td><td>JoAnnette</td><td>Contracts and Grants Administrator</td><td>MedStar Health Research Institute</td><td>joannette.perezchacon@medstar.net</td><td>301-560-7358</td></tr>
+ <tr><td>Perez-Betances</td><td>Xiomara</td><td>Senior Project Officer</td><td>Columbia University</td><td>xp1@cumc.columbia.edu</td><td>212-342-2894</td></tr>
+ <tr><td>Phillips</td><td>Serena</td><td>Research Associate</td><td>The George Washington University</td><td>sphillips@gwu.edu</td><td>202-994-1793</td></tr>
+ <tr><td>Phoenix</td><td>Janet</td><td>Assistant Research Professor</td><td>George Washington University</td><td>jphoenix@gwu.edu</td><td>703-868-1701</td></tr>
+ <tr><td>Plummer</td><td>Prue</td><td>Assistant Professor</td><td>University of North Carolina</td><td>prue@med.unc.edu</td><td>919-843-8658</td></tr>
+ <tr><td>Polanin</td><td>Megan</td><td>Senior Fellow</td><td>National Center for Health Research</td><td>mp@center4research.org</td><td>202-223-4000</td></tr>
+ <tr><td>Pope</td><td>Charlene</td><td>Research Associate Professor</td><td>Medical University of South Carolina</td><td>popec@musc.edu</td><td>843-906-8431</td></tr>
+ <tr><td>Poppe</td><td>Dorothy</td><td>EXECUTIVE DIRECTOR</td><td>CHIARI & SYRINGOMYELIA FOUNDATION</td><td>DPoppe@CSfinfo.org</td><td>718-966-2593</td></tr>
+ <tr><td>Prum</td><td>Hannah</td><td>Research Administrator</td><td>Beth Israel Deaconess Medical Center</td><td>hprum@bidmc.harvard.edu</td><td>617-667-7322</td></tr>
+ <tr><td>Raad</td><td>Bassel</td><td>MD</td><td>Spectrum Health</td><td>basselraad@hotmail.com</td><td>616-391-3127</td></tr>
+ <tr><td>Rabbani</td><td>Rumana</td><td>Co-Chair</td><td>Cross-RHEC CHW Coalition</td><td>rumana.rabbani@unc.edu</td><td>&nbsp;</td></tr>
+ <tr><td>Raguet</td><td>Marissa</td><td>Research Development Associate</td><td>HealthPartners Institute</td><td>marissa.j.raguet@healthpartners.com</td><td>952-967-5005</td></tr>
+ <tr><td>Ramirez</td><td>Mauricio</td><td>Photographer</td><td>DARMA Arts & Communications LLC</td><td>photo@mauricioramirez.com</td><td>&nbsp;</td></tr>
+ <tr><td>Raskin</td><td>Sarah</td><td>Research Scientist, Patient Reported Outcomes</td><td>Institute for Patient-Centered Initiatives and Health Equity at the GW Cancer Center</td><td>seraskin@email.gwu.edu</td><td>202-994-0988</td></tr>
+ <tr><td>Reves</td><td>Sarah</td><td>Family Nurse Practitioner/Researcher</td><td>Virginia Commonwealth University</td><td>sarah.reves@vcuhealth.org</td><td>&nbsp;</td></tr>
+ <tr><td>Ritchie</td><td>Dannie</td><td>Clinical Assistant Professor of Family Medicine</td><td>Brown University</td><td>dannie_ritchie@brown.edu</td><td>401-729-2065</td></tr>
+ <tr><td>Rodriguez Moreno</td><td>Jaime Hernan</td><td>Deputy Director, MD PHDPH</td><td>Colombian Helath Technology Assessment Institute</td><td>jaherom@gmail.com</td><td>(57315) 670-3804</td></tr>
+ <tr><td>Rothlisberger</td><td>Shirley</td><td>Senior Administrative Coordinator</td><td>University of Virginia</td><td>srr8w@virginia.edu</td><td>434-924-8419</td></tr>
+ <tr><td>Rozen</td><td>Robin</td><td>Principal</td><td>Rozen Consulting Group, LLC</td><td>RozenConsultingGroup@gmail.com</td><td>610-952-9450</td></tr>
+ <tr><td>Ryan</td><td>Nicole</td><td>Grant Strategist</td><td>American Academy of Family Physicians</td><td>nryan@aafp.org</td><td>913-906-6000</td></tr>
+ <tr><td>Saini</td><td>Abha</td><td>Founder & Principal Consultant</td><td>GrantLuminous</td><td>aasaini@grantluminous.com</td><td>610-563-5475</td></tr>
+ <tr><td>Salazar</td><td>Stefanie</td><td>Executive Associate</td><td>The George Washington University</td><td>ssalazar@email.gwu.edu</td><td>202-994-5408</td></tr>
+ <tr><td>Salgado</td><td>Teresa</td><td>Assistant Professor</td><td>School of Pharmacy, Virginia Commonwealth University</td><td>tmsalgado@vcu.edu</td><td>804-827-2253</td></tr>
+ <tr><td>Sanders</td><td>Donald</td><td>&nbsp;</td><td>&nbsp;</td><td>donald.sanders@duke.edu</td><td>919-684-6078</td></tr>
+ <tr><td>Sawaki Adams</td><td>Lumy</td><td>Associate Professor</td><td>University of Kentucky</td><td>lumy.sawaki@uky.edu</td><td>859-323-6226</td></tr>
+ <tr><td>Schoenberger</td><td>Christine</td><td>&nbsp;</td><td>Kennedy Krieger Institute</td><td>schoenberger@kennedykrieger.org</td><td>443-923-9555</td></tr>
+ <tr><td>Schuler</td><td>Brittany</td><td>Postdoctoral Fellow</td><td>Curtis Center, School of Social Work, University of Michigan</td><td>bschuler@umich.edu</td><td>215-292-6428</td></tr>
+ <tr><td>Seopaul</td><td>Shannon</td><td>Program Coordinator</td><td>Johns Hopkins University School of Nursing</td><td>sseopau1@jhu.edu</td><td>410-502-3685</td></tr>
+ <tr><td>Severance</td><td>Jennifer</td><td>Assistant Professor, GWEP Program Administrator</td><td>University of North Texas Health Science Center, Center for Geriatrics</td><td>jennifer.severance@unthsc.edu</td><td>817-735-0469</td></tr>
+ <tr><td>Shaffer</td><td>Rhonda</td><td>Grants Proposal Generalist</td><td>Pennsylvania State University Hershey Medical Center</td><td>rshaffer1@hmc.psu.edu</td><td>717-531-3582</td></tr>
+ <tr><td>Shauver</td><td>Melissa</td><td>Clinical Research Coordinator</td><td>University of Michigan Medical School</td><td>mshauver@umich.edu</td><td>734-232-6171</td></tr>
+ <tr><td>Shires</td><td>Deirdre</td><td>Assistant Professor</td><td>Michigan State University School of Social Work</td><td>shiresde@msu.edu</td><td>517-432-0087</td></tr>
+ <tr><td>Skubisz</td><td>Christine</td><td>Senior Fellow</td><td>National Center for Health Research</td><td>cms@center4research.org</td><td>&nbsp;</td></tr>
+ <tr><td>Slobogean</td><td>Gerard</td><td>Assistant Professor</td><td>University of Maryland School of Medicine</td><td>gslobogean@umoa.umm.edu</td><td>410-328-9579</td></tr>
+ <tr><td>Smart</td><td>Jerry</td><td>Community Health Worker</td><td>Transition Clinic</td><td>jerry.smart@yale.edu</td><td>203-836-9554</td></tr>
+ <tr><td>Smith</td><td>Audrey</td><td>Professor</td><td>Salus University</td><td>audrey@salus.edu</td><td>215-780-1359</td></tr>
+ <tr><td>Smith</td><td>Christopher</td><td>Director</td><td>Kennedy Krieger Institute</td><td>smithchr@kennedykrieger.org</td><td>443-923-9555</td></tr>
+ <tr><td>Smith</td><td>Rachel</td><td>Program Coordinator/Grant Manager</td><td>Rush University Medical Center</td><td>rachel_smith@rush.edu</td><td>312-942-1714</td></tr>
+ <tr><td>Sridhar</td><td>Gayathri</td><td>Associate Research Director</td><td>HealthCore Inc.</td><td>gsridhar@healthcore.com</td><td>703-236-6343</td></tr>
+ <tr><td>Stephens</td><td>Krystopher</td><td>Research Working Group/Educator</td><td>Arkansas Transgender Equality Coalition/Transform Health Arkansas</td><td>kkstephens@ualr.edu</td><td>501-276-7200</td></tr>
+ <tr><td>Stewart</td><td>Kate</td><td>Professor</td><td>University of Arkansas for Medical Sciences</td><td>StewartMaryK@uams.edu</td><td>501-526-6625</td></tr>
+ <tr><td>Stone</td><td>Sue Noell</td><td>Senior Research Scientist</td><td>University of New Mexico Health Sciences Center</td><td>SStone@salud.unm.edu</td><td>505-977-2051</td></tr>
+ <tr><td>Swaroop</td><td>Meyha</td><td>Program Manager</td><td>Massachusetts General Hospital</td><td>mswaroop@mgh.harvard.edu</td><td>617-643-1306</td></tr>
+ <tr><td>Tate</td><td>Lisa</td><td>Finance Manager</td><td>Emory University</td><td>ltate3@emory.edu</td><td>404-727-5903</td></tr>
+ <tr><td>Taylor</td><td>Anna</td><td>Director, Programs</td><td>National Stroke Association</td><td>ataylor@stroke.org</td><td>303-754-0915</td></tr>
+ <tr><td>Theodoropoulos</td><td>Eleni</td><td>Director, Quality & Measurement</td><td>URAC</td><td>etheodoropoulos@urac.org</td><td>202-962-8804</td></tr>
+ <tr><td>Tse</td><td>Annie Y.W</td><td>Grants Manager</td><td>College of Dental Medicine, Columbia University</td><td>yt2024@cumc.columbia.edu</td><td>212-305-6902</td></tr>
+ <tr><td>Vague</td><td>Lauren</td><td>Program and Project Manager</td><td>UpLift Solutions</td><td>lauren.vague@upliftsolutions.org</td><td>302-383-5709</td></tr>
+ <tr><td>Wallace</td><td>Michael</td><td>Grants Coordinator</td><td>George Washington Univeristy</td><td>mcwallace@gwu.edu</td><td>202-994-0167</td></tr>
+ <tr><td>Wan</td><td>Marilyn</td><td>Post-Doctoral Fellow</td><td>University of Pennsylvania</td><td>Marilyn.Wan@uphs.upenn.edu</td><td>215-220-9557</td></tr>
+ <tr><td>Wang</td><td>Jasmine</td><td>Research Administrator</td><td>Beth Israel Deaconess Medical Center</td><td>jwang10@bidmc.harvard.edu</td><td>617-667-7328</td></tr>
+ <tr><td>Washington-Krauth</td><td>Shavonne</td><td>Director of Community Medicine</td><td>Creighton University</td><td>shavonnewashington@creighton.edu</td><td>402-280-5287</td></tr>
+ <tr><td>Webster</td><td>Collin</td><td>Associate Professor</td><td>University of South Carolina</td><td>websterc@mailbox.sc.edu</td><td>803-719-2266</td></tr>
+ <tr><td>White</td><td>David</td><td>Health Care Advocate</td><td>Self Employed</td><td>davidmwhite@aya.yale.edu</td><td>240-716-2039</td></tr>
+ <tr><td>Williams</td><td>David</td><td>Research Administrator III</td><td>Emory University</td><td>dwill33@emory.edu</td><td>404-727-7414</td></tr>
+ <tr><td>Wilson</td><td>Leslie</td><td>Professor Health Policy and Economics</td><td>UCSF</td><td>Leslie.Wilson@ucsf.edu</td><td>415-990-1012</td></tr>
+ <tr><td>Wood</td><td>Shannon</td><td>Director, Office of Sponsored Projects</td><td>Geisinger Health System</td><td>sewood@geisinger.edu</td><td>570-214-7021</td></tr>
+ <tr><td>Wood</td><td>Nancy</td><td>Business Development Associate</td><td>Duke Clinical Research Institute</td><td>nancyg.wood@duke.edu</td><td>919-668-8873</td></tr>
+ <tr><td>Zaghab</td><td>Roxanne Ward</td><td>DIRECTOR OF THE CIPS KNOWLEDGE ENTERPRISE</td><td>UNIVERSITY OF MARYLAND SCHOOL OF PHARMACY</td><td>RZAGHAB@RX.UMARYLAND.EDU</td><td>410-706-2963</td></tr>
+ <tr><td>Zimmerman</td><td>Rick</td><td>&nbsp;</td><td>University of Missouri St Louis</td><td>zimmermanri@umsl.edu</td><td>314-516-7685</td></tr>
+
+</tbody>  
+</table>
+
+<script type="text/javascript">
+$(document).ready(function() 
+    { 
+		/* sort on last name and first name in ascending order */
+        $("#participants").tablesorter( {sortList: [[0,0], [1,0]]} ); 
+    } 
+); 
+</script>
+
+</body>
+</html>

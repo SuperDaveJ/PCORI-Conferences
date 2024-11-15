@@ -1,0 +1,1363 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Participant List</title>
+<script type="text/javascript" src="js/jquery.js"></script> 
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<style type="text/css">
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+table {
+	width: 98%;
+	margin: 10px auto;
+	border: 1px solid #333;
+	border-collapse: collapse;
+}
+th, td {
+	border: 1px solid #777;
+}
+tbody tr:nth-child(even) {
+	background-color: #d6e6f4;
+}
+td {
+	vertical-align: top;
+	padding: 3px 5px;
+}
+caption {
+	color: #1f4e79;
+	font-size: 1.5em;
+	margin: 10px;
+	font-weight: 700;
+}
+table.tablesorter th {
+	background-color: #17365d;
+	color: #fff;
+	padding: 10px;
+	cursor: pointer;
+}
+table.tablesorter thead tr .header {
+	background-image: url(img/bg.png);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(img/desc.png);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(img/asc.png);
+}
+table.tablesorter thead tr .headerSortDown, 
+table.tablesorter thead tr .headerSortUp {
+	background-color: #17365d;	/* default color is: #8dbdd8 */
+}
+</style> 
+</head>
+
+<body>
+<table id="participants" class="tablesorter">
+<caption>Participant List</caption>
+<thead>
+  <tr>
+    <th width="10%" scope="col">Last Name</th>
+    <th width="10%" scope="col">First Name</th>
+    <th width="20%" scope="col">Title</th>
+    <th width="20%" scope="col">Company</th>
+    <th width="20%" scope="col">Email Address</th>
+    <th scope="col">Work Phone</th>
+  </tr>
+</thead>
+
+<tbody>
+  <tr height=20>
+  <td height=20>Bates</td>
+  <td>Cristen</td>
+  <td>Director of Community Health</td>
+  <td>Centura Health</td>
+  <td>cristenbates@centura.org</td>
+  <td>303-673-7307</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Mancusi</td>
+  <td>Charlene</td>
+  <td>Program Officer for the Eastern Pipeline Award Program Office for PCORI</td>
+  <td>Health Resources in Action</td>
+  <td>cmancusi@hria.org</td>
+  <td>781-724-1978</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Ren</td>
+  <td>Jinma</td>
+  <td>Research Assistant Professor</td>
+  <td>University of Illinois College of Medicine at Peoria</td>
+  <td>jinmaren@uic.edu</td>
+  <td>309-671-8455</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Mathew</td>
+  <td>Luke</td>
+  <td>Program/Research Assistant</td>
+  <td>The Center for Community Health Education Research and Service (CCHERS)</td>
+  <td>LukeMathew14@gmail.com</td>
+  <td>617-415-6376</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Foxx-Orenstein</td>
+  <td>Amy</td>
+  <td>Dr., Professor</td>
+  <td>Mayo Clinic</td>
+  <td>foxx-orenstein.amy@mayo.edu</td>
+  <td>480-301-6990</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Reif</td>
+  <td>Sharon</td>
+  <td>Senior Scientist, Deputy Director, Institute for Behavioral Health</td>
+  <td>Brandeis University, Heller School</td>
+  <td>reif@brandeis.edu</td>
+  <td>781-736-3924</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Thompson</td>
+  <td>Darcy</td>
+  <td>Associate Professor of Pediatrics</td>
+  <td>University of Colorado</td>
+  <td>darcy.thompson@childrenscolorado.org</td>
+  <td>720 777 4307</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Moustakas</td>
+  <td>Nicholas</td>
+  <td>Sr. Grants Officer</td>
+  <td>Boston Medical Center</td>
+  <td>nicholas.moustakas@bmc.org</td>
+  <td>617-414-5553</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Rosario</td>
+  <td>Edith</td>
+  <td>Sr. Grants Manager</td>
+  <td>Brigham and Women's Hospital</td>
+  <td>erosario1@partners.org</td>
+  <td>617-525-8377</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Bao</td>
+  <td>Ying</td>
+  <td>Assistant Professor</td>
+  <td>Brigham and Women's Hospital</td>
+  <td>ying.bao@channing.harvard.edu</td>
+  <td>617-525-2099</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Pepe</td>
+  <td>Sharon</td>
+  <td>Grants Manager</td>
+  <td>Wayne State University</td>
+  <td>spepe@med.wayne.edu</td>
+  <td>313-577-4630</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Wong</td>
+  <td>Celene</td>
+  <td>Project Manager</td>
+  <td>Brigham &amp; Women's Hospital</td>
+  <td>cwong3@partners.org</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>Leodas</td>
+  <td>Katina</td>
+  <td></td>
+  <td>Accelerated Cure Project, Inc.</td>
+  <td>KLEODAS@ACCELERATEDCURE.ORG</td>
+  <td>781-487-0066</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Boerio</td>
+  <td>Carrie</td>
+  <td>Foundation Relations Director, Wexner Medical Center</td>
+  <td>Ohio State University</td>
+  <td>boerio.4@osu.edu</td>
+  <td>614-366-1392</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Ehrlich</td>
+  <td>Olga</td>
+  <td>PhD Candidate</td>
+  <td>UMass Amherst College of Nursing</td>
+  <td>oehrlich@nursing.umass.edu</td>
+  <td>602-432-5059</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Loud</td>
+  <td>Sara</td>
+  <td>COO</td>
+  <td>Accelerated Cure Project</td>
+  <td>sloud@acceleratedcure.org</td>
+  <td>781-487-0032</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Fagan</td>
+  <td>Maureen</td>
+  <td>Executive Director Center for Patients and Families</td>
+  <td>Brigham &amp; Women's Hospital</td>
+  <td>mfagan@partners.org</td>
+  <td>617-732-4420</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Naslund</td>
+  <td>John</td>
+  <td>Research Associate</td>
+  <td>Dartmouth College</td>
+  <td>John.A.Naslund@Dartmouth.edu</td>
+  <td>617-480-0277</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Cheng</td>
+  <td>Shou-Hsia</td>
+  <td>Professor/Fulbright Scholar</td>
+  <td>National Taiwan University/Harvatd School of Public Health</td>
+  <td>shcheng@ntu.edu.tw</td>
+  <td>857-285-8548</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Doucet</td>
+  <td>Jamie</td>
+  <td>Research and Education Coordinator</td>
+  <td>Sinai Health System</td>
+  <td>jamie.doucet@sinai.org</td>
+  <td>773-257-6130</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Clauser</td>
+  <td>Steve</td>
+  <td>Program Director</td>
+  <td>PCORI</td>
+  <td>sclauser@pcori.org</td>
+  <td>202-827-7734</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Frech</td>
+  <td>Tracy</td>
+  <td></td>
+  <td>University of Utah</td>
+  <td>tracy.frech@hsc.utah.edu</td>
+  <td>801 5484837</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Owens</td>
+  <td>Tasha</td>
+  <td>Grants &amp; Contracts Manager</td>
+  <td>Duke University</td>
+  <td>tasha.owens@duke.edu</td>
+  <td>919-668-8377</td>
+ </tr>
+ <tr height=20>
+  <td height=20>MacCormack</td>
+  <td>Michael</td>
+  <td>Senior Grants Officer</td>
+  <td>Boston Medical Center</td>
+  <td>michael.maccormack@bmc.org</td>
+  <td>617-414-5539</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Kim</td>
+  <td>Hyeoneui</td>
+  <td>Associate Professor</td>
+  <td>UC San Diego</td>
+  <td>hyk038@ucsd.edu</td>
+  <td>858-822-4368</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Gualtieri</td>
+  <td>Lisa</td>
+  <td>Assistant Professor</td>
+  <td>Tufts University School of Medicine</td>
+  <td>lisa.gualtieri@tufts.edu</td>
+  <td>617-636-0438</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Strong</td>
+  <td>Anne</td>
+  <td>Study Research Coordinator</td>
+  <td>Massachusetts General Hospital, Foot and Ankle Orthopedics</td>
+  <td>adstrong@mgh.harvard.edu</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>Connelly</td>
+  <td>Cynthia<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span>D.</td>
+  <td>Professor and Director for Nursing Research</td>
+  <td>University of San Diego</td>
+  <td>connellyc@sandiego.edu</td>
+  <td>619-260-7938</td>
+ </tr>
+ 
+ <tr height=20>
+  <td height=20>Chubak</td>
+  <td>Barbara</td>
+  <td>Fellow</td>
+  <td>Cleveland Clinic Florida</td>
+  <td>bchubak@gmail.com</td>
+  <td>954-290-3591</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Kim</td>
+  <td>Dae</td>
+  <td>Assistant Professor of Medicine</td>
+  <td>Brigham and Women's Hospital</td>
+  <td>dkim12@partners.org</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>Lewis</td>
+  <td>Susan</td>
+  <td>Assistant Director of Research Development</td>
+  <td>Tufts University</td>
+  <td>susan.lewis@tufts.edu</td>
+  <td>617 636-2487</td>
+ </tr>
+ <tr height=20>
+  <td height=20>LeCompte</td>
+  <td>Circe Gray</td>
+  <td>Communications; Doctoral Student</td>
+  <td>HealthHIV; Harvard University</td>
+  <td>cgl475@mail.harvard.edu</td>
+  <td>202-352-7240</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Rosemberg</td>
+  <td>Barbara</td>
+  <td>Program Manager</td>
+  <td>Massachusetts General Hospital/Harvard Medical School</td>
+  <td>brosemberg@mgh.harvard.edu</td>
+  <td>617 643 3079</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Adderley</td>
+  <td>Shelley</td>
+  <td>Grants and Contracts Administrator</td>
+  <td>Duke University</td>
+  <td>shelley.adderley@duke.edu</td>
+  <td>919-668-8159</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Petrini</td>
+  <td>Joann</td>
+  <td>Chief Science Officer</td>
+  <td>NICHQ</td>
+  <td>jpetrini@nichq.org</td>
+  <td>617-391-2711</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Sheynina</td>
+  <td>Marina</td>
+  <td>Sr. Grant Administrator</td>
+  <td>Massachusetts General Hospital</td>
+  <td>msheynina@mgh.harvard.edu</td>
+  <td>617-724-2732</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Smith</td>
+  <td>Nancy</td>
+  <td>Consultant, CNY-CAN Tier II Project</td>
+  <td>NHSmith Consulting</td>
+  <td>nhsmithconsulting@gmail.com</td>
+  <td>315-682-3332</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Palacholla</td>
+  <td>Ramya</td>
+  <td>Postdoctoral Scientist</td>
+  <td>Partners Connect Health, Harvard Medical School</td>
+  <td>rpalacholla@mgh.harvard.edu</td>
+  <td>857-919-9779</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Mango</td>
+  <td>LynnMarie</td>
+  <td>Grants Manager</td>
+  <td>Wayne State University</td>
+  <td>lmmango@med.wayne.edu</td>
+  <td>313-577-1224</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Applegate</td>
+  <td>Theresa</td>
+  <td>Director, Office of Sponsored Programs</td>
+  <td>Boston Children's Hospital</td>
+  <td>theresa.applegate@childrens.harvard.edu</td>
+  <td>617-919-2735</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Gonzalez De Rivas</td>
+  <td>Maria Rosario</td>
+  <td></td>
+  <td>Impactivo Consulting</td>
+  <td>maria.gonzalez44@upr.edu</td>
+  <td>787-761-5662</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Darilek</td>
+  <td>Umber</td>
+  <td>Nurture Family Specialist/ Stakeholder Relations</td>
+  <td>Nusura</td>
+  <td>Umberh@gmail.com</td>
+  <td>210-846-9075</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Barker</td>
+  <td>Anna</td>
+  <td>Project Manager</td>
+  <td>Veterans Health Administration</td>
+  <td>anna.barker@va.gov</td>
+  <td>781-687-3258</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Bellury</td>
+  <td>Lanell</td>
+  <td>Associate Professor</td>
+  <td>Mercer University</td>
+  <td>bellury_lm@mercer.edu</td>
+  <td>678-547-6772</td>
+ </tr>
+
+ <tr height=20>
+  <td height=20>Dean Kruzel</td>
+  <td>Marleah</td>
+  <td>Assistant Professor</td>
+  <td>University of South Florida</td>
+  <td>marleahdeank@usf.edu</td>
+  <td>813-974-2145</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Batelman</td>
+  <td>Shella</td>
+  <td>Sr. Research Administrator</td>
+  <td>BIDMC</td>
+  <td>rbatelma@bidmc.harvard.edu</td>
+  <td>617-754-1465</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Farbstein</td>
+  <td>Ken</td>
+  <td>Managing Principal</td>
+  <td>Melior Consulting Group</td>
+  <td>kenfarbstein@earthlink.net</td>
+  <td>781-444-5525</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Seton</td>
+  <td>Lewis</td>
+  <td>Senior Grants Administrator</td>
+  <td>Partners HealthCare</td>
+  <td>lseton@partners.org</td>
+  <td>617-521-3379</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Barr</td>
+  <td>Paul</td>
+  <td>Assistant Professor</td>
+  <td>Dartmouth College</td>
+  <td>paul.j.barr@dartmouth.edu</td>
+  <td>603-359-5305</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Kim</td>
+  <td>Pearl</td>
+  <td>PCORI Project Coordinator</td>
+  <td>UNLV</td>
+  <td>kimp17@unlv.nevada.edu</td>
+  <td>702-553-6732</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Hyde</td>
+  <td>Jennifer</td>
+  <td>Senior Administrator</td>
+  <td>University Medicine Foundation</td>
+  <td>jhyde@lifespan.org</td>
+  <td>401-444-9810</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Uramatsu</td>
+  <td>Masashi</td>
+  <td>M.D., Ph.D., J.D.</td>
+  <td>Tokyo Medical University</td>
+  <td>masashi@tkf.att.ne.jp</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>Alam</td>
+  <td>Shama</td>
+  <td>postdoctoral fellow</td>
+  <td>The Dartmouth Institute for Health Policy &amp; Clinical Practice</td>
+  <td>shama.s.alam@dartmouth.edu</td>
+  <td>603-653-3597</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Stevens Young</td>
+  <td>Dominique</td>
+  <td>Licensed Clinical Social Worker/Program Manager</td>
+  <td>University Of Pittsburgh Medical Center</td>
+  <td>Stevensdj@upmc.edu</td>
+  <td>412-692-2534</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Baim-Lance</td>
+  <td>Abigail</td>
+  <td>Researcher</td>
+  <td>City University of New York</td>
+  <td>abigail.baimlance@gmail.com</td>
+  <td>646-463-3537</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Seo</td>
+  <td>Veri</td>
+  <td>Research Assistant</td>
+  <td>MGH Mongan Institute for Health Policy</td>
+  <td>vseo@partners.org</td>
+  <td>617-726-4201</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Goodman</td>
+  <td>Koren</td>
+  <td>Clinical Research Coordinator</td>
+  <td>Saint Barnabas Medical Center-Department of Surgery</td>
+  <td>KOREN.GOODMAN@RWJBH.ORG</td>
+  <td>973-669-7361</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Cappellucci</td>
+  <td>James</td>
+  <td>Sr. Grants 7 Contracts Administrator</td>
+  <td>Partners Health Care</td>
+  <td>jcappellucci@partners.org</td>
+  <td>857-282-1724</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Comer</td>
+  <td>Dominique</td>
+  <td>Senior Clinical Researcher</td>
+  <td>Christiana Care Health System</td>
+  <td>dcomer@christianacare.org</td>
+  <td>302-733-5148</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Joyce</td>
+  <td>Victoria</td>
+  <td>Research Coordinator</td>
+  <td>Franciscan Children's</td>
+  <td>vjoyce@fhfc.org</td>
+  <td>617-779-1117</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Zimmerman</td>
+  <td>Cassie</td>
+  <td>Research Project Manager</td>
+  <td>Cleveland Clinic</td>
+  <td>zimmerc@ccf.org</td>
+  <td>216-444-4817</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Weingarden</td>
+  <td>Hilary</td>
+  <td>Clinical Fellow in Psychology</td>
+  <td>Massachusetts General Hospital/Harvard Medical School</td>
+  <td>Hilary_Weingarden@mgh.harvard.edu</td>
+  <td>617-643-6206</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Weiler</td>
+  <td>Sarah</td>
+  <td>Executive Director, SCILHS</td>
+  <td>Harvard Medical School</td>
+  <td>Sarah_Weiler@hms.harvard.edu</td>
+  <td>617-432-2280</td>
+ </tr>
+ <tr height=20>
+  <td height=20>An</td>
+  <td>Kyungeh</td>
+  <td>Associate Professor</td>
+  <td>Virginia Commonwealth University</td>
+  <td>kan@vcu.edu</td>
+  <td>804-828-8917</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Armstrong</td>
+  <td>Alison</td>
+  <td>Program Manager</td>
+  <td>Partners Connected Health Innovation (Partners Healthcare)</td>
+  <td>aarmstrong3@partners.org</td>
+  <td>617-643-9957</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Landers</td>
+  <td>Glenn</td>
+  <td></td>
+  <td>Georgia Health Policy Center</td>
+  <td>glanders@gsu.edu</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>Fleming</td>
+  <td>Jennifer</td>
+  <td>Director Foundation Relations and Government Grants</td>
+  <td>Boston Medical Center</td>
+  <td>jennifer.fleming@bmc.org</td>
+  <td>617-638-6927</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Wilkey</td>
+  <td>Catriona</td>
+  <td>Research Manager</td>
+  <td>Center for Social Innovation</td>
+  <td>cwilkey@center4si.com</td>
+  <td>617-467-6014</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Khayter</td>
+  <td>Mark</td>
+  <td>President</td>
+  <td>Ephir Inc</td>
+  <td>mkhayter@ephir.com</td>
+  <td>617-512-5967</td>
+ </tr>
+
+ <tr height=20>
+  <td height=20>Brown</td>
+  <td>Michael</td>
+  <td>Chief Medical Officer</td>
+  <td>Acesis, Inc</td>
+  <td>MichaelEBrownMD@gmail.com</td>
+  <td>(650) 396-7540</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Solomon</td>
+  <td>Scott</td>
+  <td>Director, Contracts Management and Administration</td>
+  <td>Patient-Centered Outcomes Research Institute</td>
+  <td>ssolomon@pcori.org</td>
+  <td>202-570-8613</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Mulligan</td>
+  <td>Jessica</td>
+  <td>Associate Professor of Health Policy and Management</td>
+  <td>Providence College</td>
+  <td>jmullig5@providence.edu</td>
+  <td>401-865-2021</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Carberry</td>
+  <td>Paul</td>
+  <td>Director of Foundation Relations</td>
+  <td>Bentley University</td>
+  <td>pcarberry@bentley.edu</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>Kester Engel</td>
+  <td>Tammy</td>
+  <td>Sponsored Projects Specialist</td>
+  <td>Mayo Clinic</td>
+  <td>kesterengel.tammy@mayo.edu</td>
+  <td>507-266-7724</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Nirmala</td>
+  <td>Nanguneri</td>
+  <td>Adjunct Assistant Professor</td>
+  <td>Tufts University School of Medicine</td>
+  <td>nanguneri.nirmala@tufts.edu</td>
+  <td>617 3141770</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Pollick</td>
+  <td>Karla</td>
+  <td>Administrative Director</td>
+  <td>Beth Israel Deaconess Medical Center</td>
+  <td>kpollick@bidmc.harvard.edu</td>
+  <td>617-667-7157</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Griswold</td>
+  <td>Paula</td>
+  <td>Executive Director</td>
+  <td>Mass. Coalition for the Prevention of Medical Errors</td>
+  <td>pgriswold@macoalition.org</td>
+  <td>781-262-6081</td>
+ </tr>
+ <tr height=20>
+  <td height=20>O'Kane</td>
+  <td>John</td>
+  <td>Clinical Integration Lead</td>
+  <td>Somml Health</td>
+  <td>john.okane@sommlhealth.com</td>
+  <td>518-708-4213</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Senterfitt</td>
+  <td>Colleen</td>
+  <td>consultant</td>
+  <td>American College of Nurse Midwives</td>
+  <td>csenterfitt@gmail.com</td>
+  <td>617-755-8799</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Drouin</td>
+  <td>Kaitlin</td>
+  <td>Senior Research Assistant</td>
+  <td>Brigham and Women's Hospital</td>
+  <td>kdrouin@partners.org</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>Kumar</td>
+  <td>Vishakha</td>
+  <td>Manager, Quality</td>
+  <td>Society of Critical Care Medicine</td>
+  <td>vkumar@sccm.org</td>
+  <td>630-251-7136</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Bittner Fagan</td>
+  <td>Heather</td>
+  <td>Family Medicine Physician and Researcher</td>
+  <td>Christiana Care Health System</td>
+  <td>HBittner-Fagan@christianacare.org</td>
+  <td>302-320-1335</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Avritt</td>
+  <td>Joshua</td>
+  <td>Faculty Instructor and Researcher</td>
+  <td>Loma Linda University</td>
+  <td>javritt@llu.edu</td>
+  <td>(909) 558-4000</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Moore</td>
+  <td>Allison</td>
+  <td>CEO</td>
+  <td>Hereditary Neuropathy Foundation</td>
+  <td>allison@hnf-cure.org</td>
+  <td>917-648-6971</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Healy</td>
+  <td>Liz</td>
+  <td>Independent Contractor</td>
+  <td>Delaware Academy of Medicine/ Delaware Public Health Association</td>
+  <td>ehealy36@gmail.com</td>
+  <td>508-259-7286</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Fiedler</td>
+  <td>Dale</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td>dfiedler@sihf.org</td>
+  <td>618 332 0694</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Flanagan</td>
+  <td>Patricia</td>
+  <td></td>
+  <td>Hasbro Childrens Hosp/ Brown University Dept Pediatrics</td>
+  <td>pflanagan@lifespan.org</td>
+  <td>401-248-5507</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Hanson</td>
+  <td>Catherine</td>
+  <td>Patient Advocate</td>
+  <td>University of Michigan</td>
+  <td>clphanson@sbcglobal.net</td>
+  <td>(734) 945-0306</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Pagel</td>
+  <td>Stephanie</td>
+  <td>Program Manager, Research Operations</td>
+  <td>Mayo Clinic</td>
+  <td>pagel.stephanie@mayo.edu</td>
+  <td>507-538-7490</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Haycock</td>
+  <td>Tracy</td>
+  <td>Quality and Safety Senior Program Leader</td>
+  <td>Newton Wellesley Hospital</td>
+  <td>thaycock@partners.org</td>
+  <td>508-361-4363</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Carnie</td>
+  <td>Martie</td>
+  <td>Senior Patient Advisor</td>
+  <td>Brigham and Women's Hospital Boston MA</td>
+  <td>martiecarnie@hotmail.com</td>
+  <td>617 821 1144</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Edwards</td>
+  <td>Ashley</td>
+  <td>Director, Institutional Advancement</td>
+  <td>Health Research, Inc.</td>
+  <td>bae02@healthresearch.org</td>
+  <td>518-431-1229</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Ivanova</td>
+  <td>Masha</td>
+  <td>Assistant Professor</td>
+  <td>University of Vermont</td>
+  <td>Masha.Ivanova@uvm.edu</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>Paul</td>
+  <td>Subroto</td>
+  <td>Director of Thoracic Surgery</td>
+  <td>RWJ Barnabas Health</td>
+  <td>Subroto.Paul@rwjbh.org</td>
+  <td>973-322-5195</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Alexander</td>
+  <td>Susanne</td>
+  <td>Grant Manager</td>
+  <td>Harvard University</td>
+  <td>salexand@hsph.harvard.edu</td>
+  <td>617-432-3848</td>
+ </tr>
+ <tr height=20>
+  <td height=20>McNaughton</td>
+  <td>Emily</td>
+  <td>Research Scientist</td>
+  <td>PatientsLikeMe</td>
+  <td>emcnaughton@patientslikeme.com</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>Nguyen</td>
+  <td>Tam</td>
+  <td>Assistant Professor</td>
+  <td>Boston College</td>
+  <td>tam.nguyen@bc.edu</td>
+  <td>617-552-3669</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Freeman</td>
+  <td>Elmer</td>
+  <td>Executive Director</td>
+  <td>Center for Community Health Education Research and Service, Inc.</td>
+  <td>E.Freeman@northeastern.edu</td>
+  <td>617-373-5179</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Lunn</td>
+  <td>Mitchell</td>
+  <td>Assistant Professor</td>
+  <td>University of California, San Francisco</td>
+  <td>mitchell.lunn@ucsf.edu</td>
+  <td>415-476-8620</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Thorngate</td>
+  <td>Lauren</td>
+  <td>Executive Director of Education, Research and Professional Practice</td>
+  <td>Women &amp; Infants Hospital of Rhode Island</td>
+  <td>lthorngate@wihri.org</td>
+  <td>401 274-1122 x42012</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Kottenmeier</td>
+  <td>Emilie</td>
+  <td>Manager, Strategic Initiatives</td>
+  <td>Edwards Lifesciences</td>
+  <td>emilie_kottenmeier@edwards.com</td>
+  <td>949-756-4501</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Domenico</td>
+  <td>Lisa</td>
+  <td>Associate Director of Strategy and Marketing</td>
+  <td>OHSU</td>
+  <td>domenico@ohsu.edu</td>
+  <td>503-418-9356</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Vaddepaly</td>
+  <td>Srinath</td>
+  <td>CEO &amp; Founder</td>
+  <td>RistCall LLC</td>
+  <td>srinath.vaddepally@ristcall.com</td>
+  <td>816-728-2134</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Prabhakar</td>
+  <td>Anand</td>
+  <td>Assistant Professor of Radiology</td>
+  <td>Massachusetts General Hospital</td>
+  <td>amprab@gmail.com</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>Minogue</td>
+  <td>Edel</td>
+  <td>Research Development Specialist</td>
+  <td>Brown University</td>
+  <td>edel_minogue@brown.edu</td>
+  <td>401-863-5465</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Raheel</td>
+  <td>Noor</td>
+  <td></td>
+  <td>BWH</td>
+  <td>nraheel@partners.org</td>
+  <td>617-525-4024</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Dahl</td>
+  <td>William</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td>wdahl@wustl.edu</td>
+  <td>205-317-0934</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Jones</td>
+  <td>Gin</td>
+  <td>Social Media Coordinator</td>
+  <td>XLH Network, Inc.</td>
+  <td>Gin.jones@xlhnetwork.org</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>Hsu</td>
+  <td>Kai-Yin</td>
+  <td>RA</td>
+  <td>MCPHS</td>
+  <td>lucida.hsu@gmail.com</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>Packard</td>
+  <td>Jill</td>
+  <td>Program and Public Policy Mgr/Founder</td>
+  <td>Hemophilia Alliance of Maine</td>
+  <td>jillpackard@gmail.com</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>Foley</td>
+  <td>Judi</td>
+  <td>Managing Director</td>
+  <td>Health Resources in Action</td>
+  <td>jfoley@hria.org</td>
+  <td>617-279-2217</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Feeder</td>
+  <td>Scott</td>
+  <td>Clinical Research Coordinator</td>
+  <td>Mayo Clinic</td>
+  <td>feeder.scott@mayo.edu</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>Langer</td>
+  <td>David</td>
+  <td>Research Asst Professor</td>
+  <td>Boston University</td>
+  <td>dalanger@bu.edu</td>
+  <td>617-353-9610</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Thomson</td>
+  <td>Nate</td>
+  <td>Executive Director</td>
+  <td>Athens Photographic Project</td>
+  <td>athensphotoproject@gmail.com</td>
+  <td>740-818-3624</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Levine</td>
+  <td>Leslie</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td>lcmacgr@gmail.com</td>
+  <td>617-429-7809</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Skriba</td>
+  <td>Debra</td>
+  <td>Vice President</td>
+  <td>University Hospitals</td>
+  <td>debra.skriba@uhhospitals.org</td>
+  <td>216-844-0440</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Edwards</td>
+  <td>Ashley</td>
+  <td>Chief Innovation Officer</td>
+  <td>Virginia Center for Health Innovation</td>
+  <td>ashley@vahealthinnovation.org</td>
+  <td>804-564-3956</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Murphy-Banks</td>
+  <td>Rachel</td>
+  <td>Research Associate/Program Coordinator</td>
+  <td>Tufts Medical Center</td>
+  <td>rmurphybanks@tuftsmedicalcenter.org</td>
+  <td>617-636-3292</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Moehring</td>
+  <td>Henry</td>
+  <td>President &amp; CEO</td>
+  <td>Alpha-1 Foundation</td>
+  <td>hmoehring@alpha1.org</td>
+  <td>305-648-9521</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Fortier</td>
+  <td>Suzanne</td>
+  <td></td>
+  <td>Care New England</td>
+  <td>sfortier@carene.org</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>Shahram</td>
+  <td>Jasmine</td>
+  <td>Technical Research Asistant</td>
+  <td>Partners HealthCare BWH</td>
+  <td>jshahram@partners.org</td>
+  <td>617-732-6881</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Alexander</td>
+  <td>Alex</td>
+  <td>Senior Project Manager</td>
+  <td>Mayo Clinic</td>
+  <td>alexander.alex@mayo.edu</td>
+  <td>507-284-8429</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Bailey</td>
+  <td>Kate</td>
+  <td>Grant Writer</td>
+  <td>Centura Health</td>
+  <td>katebaileyconsulting@gmail.com</td>
+  <td>508-280-0772</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Ho</td>
+  <td>Alice</td>
+  <td>Attending</td>
+  <td>Cedar Sinai Hospital</td>
+  <td>hoa1234@mskcc.org</td>
+  <td>212-639-6773</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Kudrolli</td>
+  <td>Haris</td>
+  <td>Vice President R&amp;D</td>
+  <td>Gamma Medica Inc.</td>
+  <td>Haris.Kudrolli@gammamedica.com</td>
+  <td>603-952-4441</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Schroder</td>
+  <td>Lisa</td>
+  <td>Academic Program Director</td>
+  <td>University of Minnesota - Regions Hospital</td>
+  <td>schro592@umn.edu</td>
+  <td>574-835-5174</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Parziale</td>
+  <td>Gina</td>
+  <td>Executive Director</td>
+  <td>Alport Syndrome Foundation</td>
+  <td>gparziale@alportsyndrome.org</td>
+  <td>(914) 292-0791</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Cramer</td>
+  <td>Geri</td>
+  <td>Doctoral Student- Population Health</td>
+  <td>Northeastern University</td>
+  <td>gericramer@gmail.com</td>
+  <td>781-568-0076</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Maganga</td>
+  <td>Gray</td>
+  <td>Research Grants Manager</td>
+  <td>Harvard University</td>
+  <td>gmaganga@hsph.harvard.com</td>
+  <td>617-384-8753</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Pagni</td>
+  <td>Sarah</td>
+  <td>Instructor</td>
+  <td>Tufts University School of Dental Medicine</td>
+  <td>sarah.pagni@tufts.edu</td>
+  <td>617-636-6689</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Haynie-Logan</td>
+  <td>Kimberly</td>
+  <td>Director of Research Quality and Integrity</td>
+  <td>Research, Evaluation and Social Solutions, Inc</td>
+  <td>drkrhaynie@reessi.com</td>
+  <td>540-239-6910</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Stoos</td>
+  <td>Elizabeth</td>
+  <td>Community Registry Coordinator</td>
+  <td>OHSU</td>
+  <td>stoos@ohsu.edu</td>
+  <td>503-418-9356</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Cox</td>
+  <td>Kevin</td>
+  <td>Research Assistant</td>
+  <td>The Dartmouth Institute For health Policy and Clinical Practice</td>
+  <td>kevin.c.cox@dartmouth.edu</td>
+  <td>603.653.3559</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Polastre</td>
+  <td>Shevonne</td>
+  <td>Project Manager</td>
+  <td>PCORI</td>
+  <td>spolastre@pcori.org</td>
+  <td>202-827-7681</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Hosseini</td>
+  <td>Ali</td>
+  <td>Director, Foot and Ankle Research and Innovation Lab</td>
+  <td>Massachusetts General Hospital</td>
+  <td>ali.hosseini@mgh.harvard.edu</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>Matteson</td>
+  <td>Kristen</td>
+  <td>Associate Professor of Obstetrics and Gynecology, Interim Director -
+  Divisio<span style='display:none'>n of Research</span></td>
+  <td>Women and Infants Hospital</td>
+  <td>KMatteson@wihri.org</td>
+  <td>401-274-1122</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Kerr</td>
+  <td>Anna</td>
+  <td></td>
+  <td>Ohio University Heritage College of Osteopathic Medicine</td>
+  <td>kerra1@ohio.edu</td>
+  <td>740-593-2249</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Torok</td>
+  <td>Don</td>
+  <td>Software Developer</td>
+  <td>Ephir Inc</td>
+  <td>dtorok2@gmail.com</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>Snyder</td>
+  <td>Alexis</td>
+  <td>Research Partner/Patient Family Advisor</td>
+  <td>Independent Contractor</td>
+  <td>alexisandrea@rcn.com</td>
+  <td>781-608-9168</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Smith</td>
+  <td>Kate</td>
+  <td>Project Manager</td>
+  <td>Delaware Academy of Medicine</td>
+  <td>ksmith@delamed.org</td>
+  <td>302-733-5571</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Kelly-Mamousette</td>
+  <td>Sophia</td>
+  <td>Grants Manager</td>
+  <td>Harvard University</td>
+  <td>skellyma@hsph.harvard.edu</td>
+  <td>617-432-1451</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Hayes</td>
+  <td>Erin</td>
+  <td>associate Director BACC/Grant administrator</td>
+  <td>Albany Medical College</td>
+  <td>Hayese@mail.amc.edu</td>
+  <td>518-264-3590</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Schumacher</td>
+  <td>Krista</td>
+  <td>Technical Writer</td>
+  <td>OSU Center for Health Sciences</td>
+  <td>krista.schumacher@okstate.edu</td>
+  <td>918-561-8254</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Alkahily</td>
+  <td>Osama</td>
+  <td></td>
+  <td>PCORI</td>
+  <td>oalkahily@pcori.org</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>Frank</td>
+  <td>Elizabeth</td>
+  <td>Patient Advocate</td>
+  <td>Dana Farber Cancer Institute</td>
+  <td>lsalmonfrank@gmail.com</td>
+  <td>617-872-5873</td>
+ </tr>
+ <tr height=20>
+  <td height=20>English</td>
+  <td>Sylvia</td>
+  <td>Project Manager</td>
+  <td>Columbia University</td>
+  <td>sae2134@columbia.edu</td>
+  <td>347-843-2114</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Miotto</td>
+  <td>Karen</td>
+  <td>Clinical Professor</td>
+  <td>UCLA</td>
+  <td>kmiotto@ucla.edu</td>
+  <td>310 206-2782</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Roomian</td>
+  <td>Tamar</td>
+  <td>Research Analyst</td>
+  <td>Tufts University</td>
+  <td>tamar.roomian@tufts.edu</td>
+  <td>617-636-3964</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Toombs</td>
+  <td>Trey</td>
+  <td>Program Manager</td>
+  <td>Brigham &amp; Women's Hospital</td>
+  <td>jtoombs@bwh.harvard.edu</td>
+  <td>617-732-6642</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Kelly</td>
+  <td>Juli</td>
+  <td>Health Program Coordinator, Grants</td>
+  <td>Mayo Clinic</td>
+  <td>kelly.juli@mayo.edu</td>
+  <td>480-301-8352</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Subramaniam</td>
+  <td>Balachundhar</td>
+  <td>Associate Professor of Anesthesiology, Harvard Medical School</td>
+  <td>Beth Israel Deaconess Medical Center</td>
+  <td>bsubrama@bidmc.harvard.edu</td>
+  <td>617-754-2675</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Achebe</td>
+  <td>Maureen</td>
+  <td>Physician</td>
+  <td>Brigham and Women's Hospital</td>
+  <td>mokam@bwh.harvard.edu</td>
+  <td>617-732-5048</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Gardner</td>
+  <td>Barbara</td>
+  <td>Associate Director</td>
+  <td>Tufts University</td>
+  <td>barbara.gardner@tufts.edu</td>
+  <td>617-636-2473</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Nash</td>
+  <td>Carol</td>
+  <td>Director of Research Operations</td>
+  <td>Franciscan Children's</td>
+  <td>cnash@franciscanchildrens.org</td>
+  <td>617-779-1114</td>
+ </tr>
+ <tr height=20>
+  <td height=20>Lessard Pearson</td>
+  <td>Lesa</td>
+  <td>Vice Chair</td>
+  <td>HEAR Network</td>
+  <td>Lessardpearson@gmail.com</td>
+  <td>617-852-9003</td>
+ </tr>
+
+<tr height=20>
+  <td height=20>Rushforth</td>
+  <td>Alice</td>
+  <td></td>
+  <td>Tufts Medical Center</td>
+  <td>arjushforth@tuftsmedicalcenter.org</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>Weiner</td>
+  <td>Daniel</td>
+  <td></td>
+  <td>Tufts Medical Center</td>
+  <td>dweiner@tuftsmedicalcenter.org</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>James</td>
+  <td>Ted</td>
+  <td></td>
+  <td>BIDMC/HMS</td>
+  <td>Ted.james@bidmc.harvard.edu</td>
+  <td></td>
+ </tr>
+ <tr height=20>
+  <td height=20>Challapali</td>
+  <td>Kiran</td>
+  <td></td>
+  <td>Phillips</td>
+  <td>kiran.challapali@phillips.com</td>
+  <td></td>
+ </tr>
+
+</tbody>  
+</table>
+
+<script type="text/javascript">
+$(document).ready(function() 
+    { 
+		/* sort on last name and first name in ascending order */
+        $("#participants").tablesorter( {sortList: [[0,0], [1,0]]} ); 
+    } 
+); 
+</script>
+
+</body>
+</html>

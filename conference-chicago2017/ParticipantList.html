@@ -1,0 +1,1191 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Participant List</title>
+<script type="text/javascript" src="js/jquery.js"></script> 
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<style type="text/css">
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+table {
+	width: 98%;
+	margin: 10px auto;
+	border: 1px solid #333;
+	border-collapse: collapse;
+}
+th, td {
+	border: 1px solid #777;
+}
+tbody tr:nth-child(even) {
+	background-color: #d6e6f4;
+}
+td {
+	vertical-align: top;
+	padding: 3px 5px;
+}
+caption {
+	color: #1f4e79;
+	font-size: 1.5em;
+	margin: 10px;
+	font-weight: 700;
+}
+table.tablesorter th {
+	background-color: #17365d;
+	color: #fff;
+	padding: 10px;
+	cursor: pointer;
+}
+table.tablesorter thead tr .header {
+	background-image: url(img/bg.png);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(img/desc.png);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(img/asc.png);
+}
+table.tablesorter thead tr .headerSortDown, 
+table.tablesorter thead tr .headerSortUp {
+	background-color: #17365d;	/* default color is: #8dbdd8 */
+}
+</style> 
+</head>
+
+<body>
+<table id="participants" class="tablesorter">
+<caption>Participant List</caption>
+<thead>
+  <tr>
+    <th width="10%" scope="col">Last Name</th>
+    <th width="10%" scope="col">First Name</th>
+    <th width="20%" scope="col">Title</th>
+    <th width="20%" scope="col">Company</th>
+    <th width="20%" scope="col">Email Address</th>
+    <th scope="col">Work Phone</th>
+  </tr>
+</thead>
+
+<tbody>
+  <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Adelakun</td>
+  <td>Olayele</td>
+  <td>Associate Professor</td>
+  <td>DePaul University</td>
+  <td>oadelaku@depaul.edu</td>
+  <td>312-362-5200</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ahmed</td>
+  <td>Rasheed</td>
+  <td>Executive Director</td>
+  <td>islamic medical association of north america</td>
+  <td>rasheed@imana.org</td>
+  <td>630-932-0000</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ahmed</td>
+  <td>Lois</td>
+  <td>Respiratory Therapist</td>
+  <td>Advocate Children's Hospital</td>
+  <td>ahmedlja@hotmail.com</td>
+  <td>630-290-1024</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Allen</td>
+  <td>Toni</td>
+  <td>Associate Director</td>
+  <td>Illinois Institute of Technology</td>
+  <td>allen@iit.edu</td>
+  <td>312-567-3638</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Amoroso</td>
+  <td>Paul</td>
+  <td>Physician Executive</td>
+  <td>MultiCare Health System</td>
+  <td>paul.amoroso@multicare.org</td>
+  <td>253-403-2238</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Anderson</td>
+  <td>Laura</td>
+  <td>Asst. Professor &amp; Licensed Psychologist</td>
+  <td>University at Buffalo School of Nursing</td>
+  <td>lauraand@buffalo.edu</td>
+  <td>716-829-3461</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Anderson</td>
+  <td>Heather</td>
+  <td></td>
+  <td>University of Colorado School of Pharmacy</td>
+  <td>Heather.anderson@ucdenver.edu</td>
+  <td>303-724-0683</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Anzai</td>
+  <td>Yoshimi</td>
+  <td>Professor</td>
+  <td>University of Utah</td>
+  <td>yoshimi.anzai@hsc.utah.edu</td>
+  <td>801-585-2636</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Aquilante</td>
+  <td>Christina</td>
+  <td>Associate Professor</td>
+  <td>University of Colorado</td>
+  <td>Christina.aquilante@ucdenver.edu</td>
+  <td>303-724-6126</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Bainton</td>
+  <td>Nicole</td>
+  <td>Nurse Practitioner</td>
+  <td>Columbia University Medical Center</td>
+  <td>nme2103@cumc.columbia.edu</td>
+  <td>212-305-5475</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Beck</td>
+  <td>Kristin</td>
+  <td>Assistant Director - Grant Development/Training Coordinator</td>
+  <td>Northern Michigan University</td>
+  <td>krbeck@nmu.edu</td>
+  <td>906-227-2440</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Becker</td>
+  <td>Lynne</td>
+  <td>Founder</td>
+  <td>Concussed: Brains Matter</td>
+  <td>lynne.e.becker@gmail.com</td>
+  <td>843-817-2530</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Benjamin</td>
+  <td>Danisha</td>
+  <td>Research Administrator</td>
+  <td>University of South Florida</td>
+  <td>dnbenjam@health.usf.edu</td>
+  <td>813-974-7039</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Blair</td>
+  <td>Christopher</td>
+  <td>Director of Research</td>
+  <td>Advocate Health Care</td>
+  <td>christopher.blair@advocatehealth.com</td>
+  <td>708-519-0271</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Byfield</td>
+  <td>Grace</td>
+  <td>Adjunct Faculty</td>
+  <td>North Carolina A&amp;T State University</td>
+  <td>gebyfiel@ncat.edu</td>
+  <td>336-285-2209</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Byrn</td>
+  <td>Mary</td>
+  <td>Assistant Professor</td>
+  <td>Loyola University Chicago</td>
+  <td>mbyrn@luc.edu</td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Cardwell</td>
+  <td>Kendra</td>
+  <td>Pre Award Assistant Director</td>
+  <td>North Carolina Central University</td>
+  <td>kcardwell@nccu.edu</td>
+  <td>919-530-7756</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Carlson</td>
+  <td>Katherine</td>
+  <td>Manager, Patient Centered Outcomes Research</td>
+  <td>Advocate Health Care</td>
+  <td>katherine.carlson@advocatehealth.com</td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Carroll</td>
+  <td>Kelly</td>
+  <td>research scientist navigator</td>
+  <td>lurie children's hospital</td>
+  <td>kacarroll@luriechildrens.org</td>
+  <td>312-227-6886</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Castellon</td>
+  <td>josyel</td>
+  <td>Research Grant Specialist</td>
+  <td>Cedars Sinai Medical Center</td>
+  <td>josyel.castellon@cshs.org</td>
+  <td>310-423-3315</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chao</td>
+  <td>Eugenie</td>
+  <td>Senior Grants Administrator</td>
+  <td>National Opinion Research Center</td>
+  <td>chao-eugenie@norc.org</td>
+  <td>773-256-6346</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Citron</td>
+  <td>Tod</td>
+  <td>Executive Director Behavioral Healthcare</td>
+  <td>Alliant Health Solutions, Inc.</td>
+  <td>tod.citron@allianthealth.org</td>
+  <td>678-527-3045</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Clark</td>
+  <td>Jennifer</td>
+  <td>Grant, Medical Writer</td>
+  <td>Akron Children's, The Rebecca D. Considine Research Inst.</td>
+  <td>jclark2@chmca.org</td>
+  <td>330-543-5296</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Cowan</td>
+  <td>Ethan</td>
+  <td>Associate Professor of Clinical Emergency Medicine</td>
+  <td>Mount Sinai - Beth Israel</td>
+  <td>cowane01@aol.com</td>
+  <td>917-447-4964</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Crowell</td>
+  <td>Christopher</td>
+  <td>Associate Director, Grants Management</td>
+  <td>Meharry Medical College</td>
+  <td>ccrowell@mmc.edu</td>
+  <td>615-327-6739</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Danilovich</td>
+  <td>Margaret</td>
+  <td></td>
+  <td>Northwestern University</td>
+  <td>margaret-wente@northwestern.edu</td>
+  <td>708-268-8697</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Demir-Deviren</td>
+  <td>Sibel</td>
+  <td>Clinical Professor</td>
+  <td>University of California San Francisco</td>
+  <td>Sibel.Demir@ucsf.edu</td>
+  <td>415-476-3320</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dempsey</td>
+  <td>Diane</td>
+  <td>Grants Manager</td>
+  <td>State University of New York at Buffalo School of Nursing</td>
+  <td>ddempsey@buffalo.edu</td>
+  <td>716-829-3105</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Desvarieux</td>
+  <td>Moise</td>
+  <td>Associate Professor, INSERM Chair of Excellence</td>
+  <td>Columbia University Mailman School of Public Health</td>
+  <td>mdesvarieux@columbia.edu</td>
+  <td>212-305-5172</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dilworth-Adams</td>
+  <td>Sherry</td>
+  <td>Sr. Financial Analyst, Sponsored Program Accounting</td>
+  <td>Advocate Health Care</td>
+  <td colspan=2 style='mso-ignore:colspan'>sherry.dilworth-adams@advocatehealth.com</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Doucette</td>
+  <td>Margaret</td>
+  <td>Chief, Physical Medicine and Rehabilitation</td>
+  <td>Boise VA Medical Center</td>
+  <td>margaret.doucette@va.gov</td>
+  <td>208-859-0077</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dubinsky</td>
+  <td>Diana</td>
+  <td>Research Grants &amp; Sponsored Programs Coordinator</td>
+  <td>Akron Children's Hospital</td>
+  <td>ddubinsky@chmca.org</td>
+  <td>330-543-0319</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Eardley</td>
+  <td>Jennifer</td>
+  <td>Vice President for Research</td>
+  <td>Carle Foundation Hospital</td>
+  <td>jennifer.eardley@carle.com</td>
+  <td>217-326-0388</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Erkins</td>
+  <td>Esther</td>
+  <td>Associate Director Proposal Development</td>
+  <td>IUPUI</td>
+  <td>estherki@iupui.edu</td>
+  <td>317-274-6732</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Fekete</td>
+  <td>Istvan</td>
+  <td>Assistant Director Contracts Management</td>
+  <td>The University of Chicago</td>
+  <td>ifekete@uchicago.edu</td>
+  <td>773-702-8601</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Fink</td>
+  <td>Mary</td>
+  <td>Sr. Accountant Sponsored Program Accounting</td>
+  <td>Advocate Health Care</td>
+  <td>mary.fink@advocatehealth.com</td>
+  <td>630-929-6076</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Flores</td>
+  <td>Ann Marie</td>
+  <td>Associate Professor</td>
+  <td>Northwestern University</td>
+  <td>ann.flores@northwestern.edu</td>
+  <td>615-364-2544</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Francis</td>
+  <td>Sherilyn</td>
+  <td>Health Communictions Researcher</td>
+  <td>Morehouse School of Medicine</td>
+  <td>shfrancis@msm.edu</td>
+  <td>404-822-2532</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Gaspero</td>
+  <td>Joseph</td>
+  <td>CEO</td>
+  <td>Center for Healthcare Innovation</td>
+  <td>joseph@chisite.org</td>
+  <td>773-330-2416</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Gay</td>
+  <td>Dawn</td>
+  <td>Executive Director</td>
+  <td>Patient Innovation Center NFP</td>
+  <td>dawn.gay@patientinnovationcenter.org</td>
+  <td>312-545-8000</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Gerard</td>
+  <td>Roberta</td>
+  <td>Assistant Director, Office of Sponsored Programs</td>
+  <td>Ann &amp; Robert H. Lurie Children's Hospital of Chicago</td>
+  <td>rgerard@luriechildrens.org</td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Gibson</td>
+  <td>Lorraine</td>
+  <td>Grants Specialist</td>
+  <td>Rush University Medical Center</td>
+  <td>lorraine_gibson@rush.edu</td>
+  <td>312-942-2411</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Gonzalez-Arias</td>
+  <td>Sergio</td>
+  <td>Executive Associate Dean of Clinical Affairs</td>
+  <td>FIU Herbert Wertheim College of Medicine</td>
+  <td>semgonz@fiu.edu</td>
+  <td>305-348-7888</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Gooden</td>
+  <td>Richard</td>
+  <td>Director of Communication</td>
+  <td>National Center for Primary Care at Morehouse School of Medicine</td>
+  <td>rgooden@msm.edu</td>
+  <td>404-323-9137</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Greer</td>
+  <td>Tracy</td>
+  <td>Associate Professor</td>
+  <td>University of Texas Southwestern Medical Center</td>
+  <td>tracy.greer@utsouthwestern.edu</td>
+  <td>214-648-0156</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Gunasekaran</td>
+  <td>Uma</td>
+  <td>Assistant Professor of Internal Medicine, Endocrinology</td>
+  <td>University of Texas Southwestern/Parkland Hospital and Health Syste<span
+  style='display:none'>m</span></td>
+  <td>uma.gunasekaran@utsouthwestern.edu</td>
+  <td>214-590-7219</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Handler</td>
+  <td>Arden</td>
+  <td>Professor</td>
+  <td>University of Illinois School of Public Health</td>
+  <td>handler@uic.edu</td>
+  <td>312-996-5954</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Heinert</td>
+  <td>Sara</td>
+  <td>Director of Emergency Medicine Research</td>
+  <td>University of Illinois at Chicago</td>
+  <td>sheinert@uic.edu</td>
+  <td>312-413-5504</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Hidalgo</td>
+  <td>Janice</td>
+  <td>President</td>
+  <td>Asociacion Puertorriquena para la Educacion y Prevencion de Enferm<span
+  style='display:none'>edades Cronicas</span></td>
+  <td>janice.hidalgo@prevencionpr.org</td>
+  <td>917-648-6528</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>HILL</td>
+  <td>ALETHEA</td>
+  <td>Associate Professor/Nurse Practitioner</td>
+  <td>University of South Alabama</td>
+  <td>ahill@southalabama.edu</td>
+  <td>251-455-4099</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Holmes</td>
+  <td>John</td>
+  <td>Assistant Research Professor</td>
+  <td>Idaho State University</td>
+  <td>holmjohn@isu.edu</td>
+  <td>208-282-5391</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Holubar</td>
+  <td>Brad</td>
+  <td>Research Administrator</td>
+  <td>Northwestern University</td>
+  <td>b-holubar@northwestern.edu</td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Hornby</td>
+  <td>Thomas</td>
+  <td>Professor</td>
+  <td></td>
+  <td>tghornby@iu.edu</td>
+  <td>312-350-8291</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Hospital</td>
+  <td>Michelle</td>
+  <td>Associate Research Professor</td>
+  <td>Florida International Unversity</td>
+  <td>michelle.hospital@fiu.edu</td>
+  <td>305-505-9337</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Hunt</td>
+  <td>Josh</td>
+  <td>Clinical Psychologist</td>
+  <td>Medical College of Wisconsin</td>
+  <td>jhunt@mcw.edu</td>
+  <td>414-805-5290</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Igbaseimokumo</td>
+  <td>Usiakimi</td>
+  <td>Assistant Professor</td>
+  <td>University of Missouri Kansas City / Children's Mercy Hospital</td>
+  <td>usiakimi@gmail.com</td>
+  <td>573-355-0606</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Imhof</td>
+  <td>Laurie</td>
+  <td>Senior Research Director</td>
+  <td>NORC at the University of Chicago</td>
+  <td>imhof-laurie@norc.org</td>
+  <td>312-325-2530</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Imlay</td>
+  <td>Anne</td>
+  <td>Regulatory Coordinator</td>
+  <td>Saint Louis University</td>
+  <td>aimlay@slu.edu</td>
+  <td>314-268-7058</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>impens</td>
+  <td>ann</td>
+  <td>Asst Dir IHI</td>
+  <td>Midwestern University</td>
+  <td>aimpen@midwestern.edu</td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Jackson</td>
+  <td>Kai</td>
+  <td>Assistant Director, Grants and Contrants</td>
+  <td>Ann &amp; Robert H. Lurie Children's Hospital of Chicago</td>
+  <td>kajackson@luriechildrens.org</td>
+  <td>773-755-6515</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>janney</td>
+  <td>carol</td>
+  <td>Community Health Researcher</td>
+  <td>Michigan State University College of Human Medicine</td>
+  <td>Carol.Janney@hc.msu.edu</td>
+  <td>507-271-0982</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Jasken</td>
+  <td>Christine</td>
+  <td>Research Development Associate</td>
+  <td>HealthPartners Institute</td>
+  <td>christine.a.jasken@healthpartners.com</td>
+  <td>952-883-7042</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Jefferson</td>
+  <td>Urmeka</td>
+  <td>Assistant Professor</td>
+  <td>University of Missouri</td>
+  <td>jeffersonu@missouri.edu</td>
+  <td>573-882-0273</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Jordan</td>
+  <td>Adoley</td>
+  <td>Grants and Program Development Specialist</td>
+  <td>Advocate Health Care / Advocate Charitable Foundation</td>
+  <td>adoley.jordan@advocatehealth.com</td>
+  <td>630-929-6918</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Joubert</td>
+  <td>Lanae</td>
+  <td>Assistant Professor of Nutrition</td>
+  <td>Northern Michigan University</td>
+  <td>ljoubert@nmu.edu</td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Kamyck</td>
+  <td>Dan</td>
+  <td>Community Engagement</td>
+  <td>ACT.md</td>
+  <td>dan@act.md</td>
+  <td>617-999-9478</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Kauffman</td>
+  <td>Charlotte</td>
+  <td>Owner</td>
+  <td>Charlotte Kauffman Consulting</td>
+  <td>charlottekauffman@att.net</td>
+  <td>217-220-6329</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Kazlauskaite</td>
+  <td>Rasa</td>
+  <td></td>
+  <td>Rush University Medical Center</td>
+  <td>rasa_kazlauskaite@rush.edu</td>
+  <td>312-942-3133</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Killick</td>
+  <td>Nadine</td>
+  <td>Grants Officer</td>
+  <td>Northwestern University</td>
+  <td>nkillick@northwestern.edu</td>
+  <td>312-503-7955</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Kliethermes</td>
+  <td>Mary Ann</td>
+  <td>Vice-Chair Professor</td>
+  <td>Midwestern University</td>
+  <td>mkliet@midwestern.edu</td>
+  <td>630-515-6954</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Kong</td>
+  <td>Julie</td>
+  <td>Director of Research Services</td>
+  <td>University of Illinois at Chicago</td>
+  <td>jckong@uic.edu</td>
+  <td>312-413-8508</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lapointe</td>
+  <td>Robert</td>
+  <td>Deputy Director, Sponsored Research and Programs</td>
+  <td>Illinois Institute of Technology</td>
+  <td>lapointe@iit.edu</td>
+  <td>312-567-7135</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lawson</td>
+  <td>Andrea</td>
+  <td>Research Psychologist</td>
+  <td>Sinai Health Network</td>
+  <td>Andrea.Lawson@sinaihealthsystem.ca</td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lee</td>
+  <td>Joo</td>
+  <td>Managing Director</td>
+  <td>McAllister and Quinn</td>
+  <td>jyounglee@jm-aq.com</td>
+  <td>202-296-2741</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lee</td>
+  <td>Danbi</td>
+  <td>Post-doctoral fellow</td>
+  <td>Northwestern University</td>
+  <td>danbi.lee@northwestern.edu</td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lee</td>
+  <td>Tamara</td>
+  <td>Director of Research and Sponsored Programs</td>
+  <td>Alabama State University</td>
+  <td>tylee@alasu.edu</td>
+  <td>334-421-0149</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lindquist</td>
+  <td>Lee</td>
+  <td>Section Chief - Geriatrics</td>
+  <td>Northwestern University</td>
+  <td>LAL425@MD.NORTHWESTERN.EDU</td>
+  <td>312-503-5558</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lowry</td>
+  <td>Kelly</td>
+  <td>Assistant Professor</td>
+  <td>Ann &amp; Robert H Lurie Children's Hospital of Chicago</td>
+  <td>klowry@luriechildrens.org</td>
+  <td>312-227-3421</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Marras</td>
+  <td>William</td>
+  <td>Professor</td>
+  <td>The Ohio State Unviersity</td>
+  <td>marras.1@osu.edu</td>
+  <td>614-292-6670</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Martinez</td>
+  <td>Sandra</td>
+  <td>Lead Patient</td>
+  <td>The Ohio State University</td>
+  <td>martinez.518@buckeyemail.osu.edu</td>
+  <td>956-624-5294</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Martinez</td>
+  <td>Katherine</td>
+  <td>Physical Therapist, Assistant Professor</td>
+  <td>Northwestern University</td>
+  <td>k-martinez@northwestern.edu</td>
+  <td>312-503-3341</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Meier</td>
+  <td>Natasha</td>
+  <td>Grants and Contracts Manager</td>
+  <td>University of Chicago</td>
+  <td>nameier@uchicago.edu</td>
+  <td>773-702-8605</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Merryweather-Ar<span style='display:none'>ges</span></td>
+  <td>Patricia</td>
+  <td></td>
+  <td>Project Patient Care</td>
+  <td>pmerryweather@p4ps.net</td>
+  <td>630-202-5579</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Meskis</td>
+  <td>Mary Anne</td>
+  <td>Executive Director</td>
+  <td>Dravet Syndrome Foundation</td>
+  <td>maryanne@dravetfoundation.org</td>
+  <td>203-392-1950</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitzel</td>
+  <td>Annette</td>
+  <td>Scientific and Operations Director for Childhood Lifestyles and
+  Population Heal<span style='display:none'>th Research</span></td>
+  <td>Akron Children's Hospital</td>
+  <td>amitzel@chmca.org</td>
+  <td>330-543-3610</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mora</td>
+  <td>Jorge</td>
+  <td>Director Geriatrics/ Associate Professor</td>
+  <td>Florida International University</td>
+  <td>jcmora@fiu.edu</td>
+  <td>305-348-6645</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Morhardt</td>
+  <td>Darby</td>
+  <td>Associate Professor</td>
+  <td>Northwestern University</td>
+  <td>d-morhardt@northwestern.edu</td>
+  <td>312-908-9432</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mou</td>
+  <td>Jin</td>
+  <td>Sr Research Epidemiologist</td>
+  <td>MultiCare Health System</td>
+  <td>jin.mou@multicare.org</td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mugg</td>
+  <td>Rachel</td>
+  <td>Grants Officer</td>
+  <td>Northwestern University</td>
+  <td>r-mugg@northwestern.edu</td>
+  <td>312-503-7955</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ninnemann</td>
+  <td>Emily</td>
+  <td>Advocacy and Practice Affairs Associate</td>
+  <td>American Society for Dermatologic Surgery Association</td>
+  <td>eninnemann@asds.net</td>
+  <td>847-956-9121</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Olson</td>
+  <td>Bernadette</td>
+  <td>Associate Professor</td>
+  <td>South Dakota State University</td>
+  <td>bernie.olson@sdstate.edu</td>
+  <td>605-688-5022</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ortiz</td>
+  <td>Estephanie</td>
+  <td>Project Coordinator</td>
+  <td>The Ohio State University</td>
+  <td>ortiz.115@osu.edu</td>
+  <td>614-688-4600</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pandey</td>
+  <td>Dilip</td>
+  <td>Director of Clinical Research</td>
+  <td>Department of Neurology and Rehabilitation, University of Illinois at C<span
+  style='display:none'>hicago</span></td>
+  <td>dpandey@uic.edu</td>
+  <td>312-355-5421</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Patel</td>
+  <td>Chirag</td>
+  <td>Executive Director, System Planning &amp; Development</td>
+  <td>Carle Foundation Hospital</td>
+  <td>chirag.patel@carle.com</td>
+  <td>217-383-7508</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pearson</td>
+  <td>Steve</td>
+  <td>Research Administrator</td>
+  <td>Northwestern University</td>
+  <td>s-pearson@northwestern.edu</td>
+  <td>312-503-3736</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Phelan</td>
+  <td>Elizabeth</td>
+  <td>Associate Professor of Medicine/Gerontology and Geriatric Medicine</td>
+  <td>University of Washington</td>
+  <td>phelane@u.washington.edu</td>
+  <td>206-744-9112</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pickering</td>
+  <td>Matthew</td>
+  <td>Associate Director, Research &amp; Quality Strategies</td>
+  <td>Pharmacy Quality Alliance</td>
+  <td>mpickering@pqaalliance.org</td>
+  <td>703-873-7546</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Rahmani</td>
+  <td>Bahram</td>
+  <td>Associate Professor</td>
+  <td>Northwestern University</td>
+  <td>brahmani@luriechildrens.org</td>
+  <td>312-227-6189</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Rajan</td>
+  <td>Chitra</td>
+  <td>Associate Vice President for Research Advancement</td>
+  <td>University at Buffalo</td>
+  <td>chitrara@buffalo.edu</td>
+  <td>716-645-6833</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ralay Ranaivo</td>
+  <td>Hanta</td>
+  <td>Research Coordinator</td>
+  <td>Ann &amp; Robert H. Lurie Children's Hospital of Chicago</td>
+  <td>hralay@luriechildrens.org</td>
+  <td>312-227-6719</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ramirez</td>
+  <td>Vanessa</td>
+  <td>Research Project Manager</td>
+  <td>Northwestern University Feinberg School of Medicine</td>
+  <td>vanessa-ramirez-0@northwestern.edu</td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Reins</td>
+  <td>Peggy</td>
+  <td>Director, Foundation Relations</td>
+  <td>Advocate Health Care / Advocate Charitable Foundation</td>
+  <td>peggy.reins@advocatehealth.com</td>
+  <td>630-929-6932</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Reyna-Blanco</td>
+  <td>K. Yazmin</td>
+  <td>Clinical Research Coordinator</td>
+  <td>The University of Chicago</td>
+  <td>kreynablanco@medicine.bsd.uchicago.e<span style='display:none'>du</span></td>
+  <td>773-702-7696</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Richardson</td>
+  <td>Rita</td>
+  <td>Program Coordinator, Orthopaedic Research &amp; Labs</td>
+  <td>Tulane University School of Medicine</td>
+  <td>rrichar1@tulane.edu</td>
+  <td>504-988-6055</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ridosh</td>
+  <td>Monique</td>
+  <td>Assistant Professor</td>
+  <td>Marcella Niehoff School of Nursing Loyola University Chicago</td>
+  <td>mridosh@luc.edu</td>
+  <td>708-216-0336</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Rodgers</td>
+  <td>Phyllis</td>
+  <td>Founder/President</td>
+  <td>Peer Plus Education and Training Advocates</td>
+  <td>prodgers51@cs.com</td>
+  <td>312-919-0266</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Rogers</td>
+  <td>Beverly</td>
+  <td>CEO</td>
+  <td>From Momma's House</td>
+  <td>bjrog70@gmail.com</td>
+  <td>708-957-7104</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Rosul</td>
+  <td>Linda</td>
+  <td>Manager of Research and Analysis</td>
+  <td>ACCESS Commnity Health Network</td>
+  <td>linda.rosul@achn.net</td>
+  <td>773-247-2402</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Rowe</td>
+  <td>Theresa</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td>theresa.rowe@northwestern.edu</td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Royse</td>
+  <td>Colin</td>
+  <td>Professor</td>
+  <td>The university of Melbourne</td>
+  <td>colin.royse@heartweb.com</td>
+  <td>613-834-45673</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Samuelson</td>
+  <td>Emily</td>
+  <td>Research Assistant Professor</td>
+  <td>Northwestern University</td>
+  <td>emily.poon@northwestern.edu</td>
+  <td>312-695-4761</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Saunders-Adams</td>
+  <td>Stacey</td>
+  <td>Senior Research Associate</td>
+  <td>The Ohio State University, College of Social Work</td>
+  <td>saunders-adams.1@osu.edu</td>
+  <td>614-292-4050</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Shaperd</td>
+  <td>Anita</td>
+  <td>Asst. Dir. Research Operations</td>
+  <td>University of Illinois at Chicago</td>
+  <td>anshap@uic.edu</td>
+  <td>312-355-4667</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Singla</td>
+  <td>Daisy</td>
+  <td>Dr.</td>
+  <td>Sinai Health Network</td>
+  <td>singla.daisy@gmail.com</td>
+  <td>416-562-4438</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Sodhi</td>
+  <td>Monsheel</td>
+  <td>Assistant Professor</td>
+  <td>Loyola University Chicago</td>
+  <td>msodhi@luc.edu</td>
+  <td>708-216-7994</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Sohn</td>
+  <td>Min-Woong</td>
+  <td>Associate Professor</td>
+  <td>University of Virginia</td>
+  <td>msohn@virginia.edu</td>
+  <td>434-924-8753</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Sow</td>
+  <td>Angela</td>
+  <td>Sr. Clinical Research Coordinator</td>
+  <td>The Ohio State University</td>
+  <td>angela.sow@osumc.edu</td>
+  <td>614-247-7732</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Stasher-Booker</td>
+  <td>Bridgette</td>
+  <td>Interim Chair, Health Information Management</td>
+  <td>Alabama State University</td>
+  <td>bbooker@alasu.edu</td>
+  <td>601-966-1690</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Strutz</td>
+  <td>Kelly</td>
+  <td>Assistant Professor</td>
+  <td>Michigan State University</td>
+  <td>kelly.strutz@hc.msu.edu</td>
+  <td>616-234-0982</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Sufian</td>
+  <td>Sandy</td>
+  <td>Associate Professor, Medical History and Disability Studies, College of
+  Medicin<span style='display:none'>e</span></td>
+  <td>University of Illinois-Chicago</td>
+  <td>sufians@uic.edu</td>
+  <td>773-677-0988</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Thicklin</td>
+  <td>Florence</td>
+  <td>CEO - Director</td>
+  <td>Good Health Institute of Chicago</td>
+  <td>fthicklin@gmail.com</td>
+  <td>773-848-4100</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Thompson</td>
+  <td>James</td>
+  <td></td>
+  <td>University of Massachusetts Medical School</td>
+  <td>James.Thompson@umassmed.edu</td>
+  <td>508-856-8999</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Thompson</td>
+  <td>Rachel</td>
+  <td>Assistant Professor</td>
+  <td>Dartmouth College</td>
+  <td>rachel.thompson@dartmouth.edu</td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Tocco</td>
+  <td>Rachel</td>
+  <td>Project Manager</td>
+  <td>Arbor Research Collaborative for Health</td>
+  <td>Rachel.Tocco@ArborResearch.org</td>
+  <td>734-369-9679</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toler</td>
+  <td>Susan</td>
+  <td>Manager, Sponsored Program Accounting</td>
+  <td>Advocate Healthcare</td>
+  <td>susan.toler@advocatehealth.com</td>
+  <td>630-929-6072</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Torres</td>
+  <td>Monica</td>
+  <td>Program Planner and Analyst</td>
+  <td>University of South Florida</td>
+  <td>mbatista@health.usf.edu</td>
+  <td>813-974-0382</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Vermoch</td>
+  <td>Kathleen</td>
+  <td>Manager, Quality Implementation Programs</td>
+  <td>Society of Critical Care Medicine</td>
+  <td>kvermoch@sccm.org</td>
+  <td>847-827-7157</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Vogel-Farley</td>
+  <td>Vanessa</td>
+  <td>Executive Director</td>
+  <td>Dup15q Alliance</td>
+  <td>vanessa.vogelfarley@dup15q.org</td>
+  <td>855-387-1572</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volpe</td>
+  <td>Ellen</td>
+  <td>assistant professor</td>
+  <td>University at Buffalo, School of Nursing</td>
+  <td>emvolpe@buffalo.edu</td>
+  <td>585-737-5745</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Walker</td>
+  <td>Andre</td>
+  <td>Grants and Contracts Manager</td>
+  <td>The University of Chicago</td>
+  <td>andre.walker@uchicago.edu</td>
+  <td>773-702-3466</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Wendling</td>
+  <td>Greg</td>
+  <td>Assistant Director, Grants &amp; Contracts</td>
+  <td>Ann &amp; Robert H. Lurie Children's Hospital of Chicago</td>
+  <td>gwendling@luriechildrens.org</td>
+  <td>773-755-6307</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Williams</td>
+  <td>Cheryl</td>
+  <td>Associate Director</td>
+  <td>University of Rochester</td>
+  <td>cheryl.williams@rochester.edu</td>
+  <td>585-275-1503</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Wuorinen</td>
+  <td>Elizabeth</td>
+  <td>Associate Dean/Director School of Health and Human Performance</td>
+  <td>Northern Michigan University</td>
+  <td>ewuorine@nmu.edu</td>
+  <td>906-227-2528</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Yost</td>
+  <td>Angela</td>
+  <td>Pre-Award Manager</td>
+  <td>University of Pittsburgh</td>
+  <td>ayost@pitt.edu</td>
+  <td>412-383-1607</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Zadinsky</td>
+  <td>Julie</td>
+  <td>Assistant Dean for Research</td>
+  <td>Augusta University</td>
+  <td>JZADINSKY@augusta.edu</td>
+  <td>706-721-2469</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Zun</td>
+  <td>Leslie</td>
+  <td>SYstem Chair</td>
+  <td>Chicago Medical School</td>
+  <td>zunl@sinai.org</td>
+  <td>773-257-6957</td>
+ </tr>
+
+</tbody>  
+</table>
+
+<script type="text/javascript">
+$(document).ready(function() 
+    { 
+		/* sort on last name and first name in ascending order */
+        $("#participants").tablesorter( {sortList: [[0,0], [1,0]]} ); 
+    } 
+); 
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96990670-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
